@@ -77,5 +77,5 @@ Examples of data acquisition can be seen at
 * [http://www.kitware.com/blog/home/post/253]
 * [http://figshare.com/articles/Tardigrades_March_2014/1051751]
 * [http://midas3.kitware.com/midas/folder/11394]
-
+* [https://twitter.com/luisibanez/status/476475327074410496/photo/1]
 
