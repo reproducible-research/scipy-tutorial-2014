@@ -25,9 +25,9 @@ If you are using an Android device, this might be the most straight-forward meth
 ### Twitter
 
 * Twitt the image using the hashtags
-** #reproducibleresearch
-** #scipy
-** #openscience
+  * #reproducibleresearch
+  * #scipy
+  * #openscience
 
 ### Email
 

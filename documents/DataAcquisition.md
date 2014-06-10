@@ -46,25 +46,25 @@ Use a mobile device
 * Place the device on a flat surface.
 * Immerse your finger in the glass of water as to draw a drop of water.
 * Place the drop of water on top of the camera.
-** Make sure to place the water well centered on the camera.
-** Make the drop as small as possible.
+  * Make sure to place the water well centered on the camera.
+  * Make the drop as small as possible.
 
 #### The Object
 
 * Place a sample object in front of the water drop, without toching the drop.
 * Monitor the image of the object in the screen of the mobile device.
 * Once you get the object in focus, press the acquisition button.
-** Note that the object might only be in focus at the center of the image, this is a normal aberration for spherical lenses.
+  * Note that the object might only be in focus at the center of the image, this is a normal aberration for spherical lenses.
 * Repeat until you master the process
 * Note that some devices may allow you to use a timer to acquire an image.
-** For example, give you a delay of three seconds between the time you press the button and the time the image is taken.
-** This may help you to focus on holding the sample at the right location for it to be in focus.
+  * For example, give you a delay of three seconds between the time you press the button and the time the image is taken.
+  * This may help you to focus on holding the sample at the right location for it to be in focus.
 * Note that you could either acquire a still image or a video sequence.
 
 #### The Microscopy Samples
 
 * Take the microscopy samples distributed by instructors.
-** It typically will contain some microscopic organisms floating in a solution.
+  * It typically will contain some microscopic organisms floating in a solution.
 * Put a drop of the sample in a glass slide.
 * Place the glass slide just above the water drop lens.
 * Adjust the position until you see the sample in focus.
