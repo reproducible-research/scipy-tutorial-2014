@@ -36,7 +36,7 @@ Use a mobile device
 ### Slide Covers
 
 * Get cover slides from instructors
-* Be careful with the pieces of glass, they are very thin and can easily cut.
+* Be careful with the pieces of glass, they are very thin and can easily cut your skin.
 
 ### Post-Its Notes
 
@@ -68,18 +68,19 @@ Use a mobile device
   * Note that the object might only be in focus at the center of the image, this is a normal aberration for spherical lenses.
 * Repeat until you master the process
 * Note that some devices may allow you to use a timer to acquire an image.
-  * For example, give you a delay of three seconds between the time you press the button and the time the image is taken.
-  * This may help you to focus on holding the sample at the right location for it to be in focus.
+  * For example, give a delay of three seconds between the time you press the button and the time the image is taken.
+  * This may help to hold the sample at the right location for it to be in focus.
 * Note that you could either acquire a still image or a video sequence.
 
 #### The Microscopy Samples
 
 * Take the microscopy samples distributed by instructors.
   * It typically will contain some microscopic organisms floating in a solution.
-* Put a drop of the sample in a glass slide cover.
+* Put a drop of the sample in a glass cover slide.
 * Place the glass slide just above the water drop lens.
 * Adjust the position until you see the sample in focus.
 * Acquire the image.
+  * Blocking any direct light with your hand may improve the illumination of the sample.
 
 ## Examples
 
