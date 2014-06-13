@@ -24,3 +24,7 @@ Sign up for a free MIDAS account at [http://midas3.kitware.com/midas/#].
 
 Sign up for a free OpenScienceFramework account at [https://osf.io/login/]
 
+## Computational Environment
+
+See the ComputationalEnvironment document for instructions on how to set up the computational environment.
+
