@@ -58,11 +58,11 @@ Use a mobile device
 * Immerse your finger in the glass of water as to draw a drop of water.
 * Place the drop of water on top of the camera.
   * Make sure to place the water well centered on the camera.
-  * Make the drop as small as possible.
+  * Make the drop as small as possible, yet cover the sensor.
 
 #### The Object
 
-* Place a sample object in front of the water drop, without toching the drop.
+* Place a small object or the tip of your finger in front of the water drop, without touching the drop.
 * Monitor the image of the object in the screen of the mobile device.
 * Once you get the object in focus, press the acquisition button.
   * Note that the object might only be in focus at the center of the image, this is a normal aberration for spherical lenses.
