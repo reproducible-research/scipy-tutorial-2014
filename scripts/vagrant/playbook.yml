@@ -7,6 +7,10 @@
     apt: name=python-pip state=present
     sudo: yes
 
+  - name: install git
+    apt: name=git state=present
+    sudo: yes
+    
   - name: install python
     apt: name=python2.7-dev state=present
     sudo: yes  
