@@ -60,5 +60,5 @@
     sudo: yes
 
   - name: install SimpleITK
-    pip: name=SimpleITK
+    easy_install: name=SimpleITK
     sudo: yes
