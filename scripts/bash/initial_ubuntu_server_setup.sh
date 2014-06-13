@@ -11,6 +11,8 @@ sudo apt-get install npm
 sudo npm update
 sudo apt-get install tmux
 sudo apt-get install ipython
+sudo apt-get install ipython-notebook
 sudo apt-get install python-dev
 sudo apt-get install python-pip
-sudo pip install numpy
+sudo apt-get install python-numpy
+sudo apt-get install python-matplotlib
