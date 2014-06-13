@@ -1,0 +1,52 @@
+- hosts: all
+  tasks:
+  - apt: update_cache=yes
+    sudo: yes
+
+  - name: ensure pip is at the latest version
+    apt: name=python-pip state=present
+    sudo: yes
+
+  - name: install python
+    apt: name=python2.7-dev state=present
+    sudo: yes  
+
+  - name: install build-essential 
+    apt: name=build-essential state=present
+    sudo: yes
+
+  - name: install gfortran 
+    apt: name=gfortran state=present
+    sudo: yes
+
+  - name: install libopenblas-dev 
+    apt: name=libopenblas-dev state=present
+    sudo: yes
+
+  - name: install liblapack-dev 
+    apt: name=liblapack-dev state=present
+    sudo: yes
+
+  - name: install numpy
+    pip: name=numpy
+    sudo: yes
+
+  - name: install scipy
+    pip: name=scipy
+    sudo: yes
+
+  - name: install matplotlib
+    pip: name=matplotlib
+    sudo: yes
+
+  - name: install dexy
+    pip: name=dexy
+    sudo: yes
+
+  - name: install ipython
+    pip: name=ipython
+    sudo: yes
+
+  - name: install SimpleITK
+    pip: name=SimpleITK
+    sudo: yes
