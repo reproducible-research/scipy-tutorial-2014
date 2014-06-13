@@ -8,5 +8,5 @@ Please read the documents in the following order
 * Preparation.md
 * DataAcquisition.md
 * DataSharing.md
-
+* ComputationalEnvironment.md
 
