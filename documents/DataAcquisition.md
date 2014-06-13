@@ -33,6 +33,17 @@ Use a mobile device
 * Get half a glass of water
 * Get a napkin
 
+### Slide Covers
+
+* Get cover slides from instructors
+* Be careful with the pieces of glass, they are very thin and can easily cut.
+
+### Post-Its Notes
+
+* Get a block of post-its notes from instructors
+* This will be used to hold the cover slides
+* Distance to the camera will be adjusted by placing the cover slide in different 'pages' of the post-it block.
+
 ### Camera selection
 
 * Identify if it has a forward facing camera, and if so, select this camera.
@@ -65,7 +76,7 @@ Use a mobile device
 
 * Take the microscopy samples distributed by instructors.
   * It typically will contain some microscopic organisms floating in a solution.
-* Put a drop of the sample in a glass slide.
+* Put a drop of the sample in a glass slide cover.
 * Place the glass slide just above the water drop lens.
 * Adjust the position until you see the sample in focus.
 * Acquire the image.
