@@ -5,8 +5,9 @@ research warriors to go through the training process.
 
 Please read the documents in the following order
 
-* Preparation.md
-* DataAcquisition.md
-* DataSharing.md
-* ComputationalEnvironment.md
+* [Preparation.md](Preparation.md)
+* [DataAcquisition.md](DataAcquisition.md)
+* [DataSharing.md](DataSharing.md)
+* [DataProcessing.md](DataProcessing.md)
+* [ComputationalEnvironment.md](ComputationalEnvironment.md)
 
