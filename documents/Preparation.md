@@ -20,6 +20,10 @@ Sign up for a free Figshare account at [https://figshare.com/account/register].
 
 Sign up for a free MIDAS account at [http://midas3.kitware.com/midas/#].
 
+### Girder
+
+Sign up for a free Girder account at [http://54.221.241.247:8080].
+
 ### OpenScienceFramework
 
 Sign up for a free OpenScienceFramework account at [https://osf.io/login/]
