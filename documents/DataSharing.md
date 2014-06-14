@@ -74,4 +74,14 @@ More on the Figshare API at [http://api.figshare.com/docs/]
 * Create a folder called 'ReproducibleResearch'
 * Upload the images to this folder
 * Share the link to the folder with your peers
+* Downloading a file through the API
+  * Look at the Item, for example [http://54.221.241.247:8080/#item/539c7a298d72b60edb223ec9]
+  * The last number in the URL is the Item ID: 539c7a298d72b60edb223ec9
+  * The page will show you the file name as: IMG_20140331_131725.jpeg
+  * We can combine the two in a URL of the form:
+  * http://54.221.241.247:8080/api/v1/file/ItemID/download/FileName
+  * For example
+    * http://54.221.241.247:8080/api/v1/file/539c7a298d72b60edb223eca/download/IMG_20140331_131725.jpeg
 
+More on the Girder API at [http://54.221.241.247:8080/api/v1]
+More on the Girder Documentation [http://girder.readthedocs.org]
