@@ -66,11 +66,10 @@ Now that you have brought the images to a hard disk, you can upload them to both
   * http://files.figshare.com/1526486/VID_20140331_135241.mp4
 
 
-### MIDAS
+### Girder
 
-* Login in your MIDAS account
-* Join the community Reproducible Research [?]
-* Create a folder with your name
+* Login in your Girder account
+* Create a folder called 'ReproducibleResearch'
 * Upload the images to this folder
 * Share the link to the folder with your peers
 
