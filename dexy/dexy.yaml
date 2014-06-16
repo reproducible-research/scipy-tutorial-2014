@@ -1,0 +1,6 @@
+processing.md|jinja|markdown|easyhtml:
+    # syntax highlight all .py files
+    - .py|idio
+    # run this .py file through the interpreter, capturing stdout and adding any new files
+    - process-images.py|py:
+        - py: { add-new-files: True }

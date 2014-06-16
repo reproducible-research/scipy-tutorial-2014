@@ -29,7 +29,7 @@ mkdir reproducible-research
 cd    reproducible-research
 git clone https://github.com/reproducible-research/scipy-tutorial-2014.git
 cd scipy-tutorial-2014/notebooks
-ipyton notebook --ip=*  --pylab=inline
+ipython notebook --ip=*  --pylab=inline
 
 #
 # Girder
