@@ -21,6 +21,9 @@ glass surface, therefore creating a half-spherical lense.
 
 ## Acquisition
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/kvKDqg-jbX4" frameborder="0" allowfullscreen></iframe>
+
+
 ### Device
 
 Use a mobile device
@@ -54,6 +57,8 @@ Use a mobile device
 
 #### The Water Drop
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/mURPEFv9uyg" frameborder="0" allowfullscreen></iframe>
+
 * Place the device on a flat surface.
 * Immerse your finger in the glass of water as to draw a drop of water.
 * Place the drop of water on top of the camera.
@@ -61,6 +66,8 @@ Use a mobile device
   * Make the drop as small as possible, yet cover the sensor.
 
 #### The Object
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/kbRBKXDPqTM" frameborder="0" allowfullscreen></iframe>
 
 * Hold a small object or the tip of your finger in front of the water drop, without touching the drop.
 * Monitor the image of the object in the screen of the mobile device.
@@ -73,6 +80,8 @@ Use a mobile device
 * Note that you could either acquire a still image or a video sequence.
 
 #### The Microscopy Samples
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/1dX6jiezYuY" frameborder="0" allowfullscreen></iframe>
 
 * Take the microscopy samples distributed by instructors.
   * It typically will contain some microscopic organisms floating in a solution.
@@ -89,6 +98,7 @@ Examples of data acquisition can be seen at
 * [http://www.kitware.com/blog/home/post/253]
 * [http://dx.doi.org/10.6084/m9.figshare.1051751]
 * [http://dx.doi.org/10.6084/m9.figshare.1058904]
+* [http://dx.doi.org/10.6084/m9.figshare.1058902]
 * [http://midas3.kitware.com/midas/folder/11394]
 * [https://twitter.com/luisibanez/status/476475327074410496/photo/1]
 
