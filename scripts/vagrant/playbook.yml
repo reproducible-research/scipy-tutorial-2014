@@ -70,3 +70,15 @@
   - name: install git
     apt: name=git state=latest
     sudo: yes
+
+  - name: install vim
+    apt: name=vim state=latest
+    sudo: yes
+
+  - name: install emacs
+    apt: name=emacs state=latest
+    sudo: yes
+
+  - name: install python-nose
+    pip: name=nose
+    sudo: yes
