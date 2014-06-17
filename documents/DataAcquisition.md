@@ -21,8 +21,7 @@ glass surface, therefore creating a half-spherical lense.
 
 ## Acquisition
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/kvKDqg-jbX4" frameborder="0" allowfullscreen></iframe>
-
+[![Acquisition Overview](http://img.youtube.com/vi/kvKDqg-jbX4/0.jpg)](http://www.youtube.com/watch?v=kvKDqg-jbX4)
 
 ### Device
 
@@ -57,7 +56,7 @@ Use a mobile device
 
 #### The Water Drop
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/mURPEFv9uyg" frameborder="0" allowfullscreen></iframe>
+[![Water Drop](http://img.youtube.com/vi/mURPEFv9uyg/0.jpg)](http://www.youtube.com/watch?v=mURPEFv9uyg)
 
 * Place the device on a flat surface.
 * Immerse your finger in the glass of water as to draw a drop of water.
@@ -67,7 +66,7 @@ Use a mobile device
 
 #### The Object
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/kbRBKXDPqTM" frameborder="0" allowfullscreen></iframe>
+[![Finger Focus](http://img.youtube.com/vi/kbRBKXDPqTM/0.jpg)](http://www.youtube.com/watch?v=kbRBKXDPqTM)
 
 * Hold a small object or the tip of your finger in front of the water drop, without touching the drop.
 * Monitor the image of the object in the screen of the mobile device.
@@ -81,7 +80,7 @@ Use a mobile device
 
 #### The Microscopy Samples
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/1dX6jiezYuY" frameborder="0" allowfullscreen></iframe>
+[![Cover Slide Position](http://img.youtube.com/vi/1dX6jiezYuY/0.jpg)](http://www.youtube.com/watch?v=1dX6jiezYuY)
 
 * Take the microscopy samples distributed by instructors.
   * It typically will contain some microscopic organisms floating in a solution.
