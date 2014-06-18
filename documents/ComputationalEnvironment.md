@@ -20,7 +20,7 @@ scipy-tutorial-2014/scripts/vagrant.
 
 ## Manual
 
-Run the *check_env.py* to ensure that all required Python packages and executables are installed.
+Run the *check_env.py* script to ensure that all required Python packages and executables are installed.
 
 
 
