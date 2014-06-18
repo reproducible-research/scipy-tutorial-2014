@@ -4,7 +4,7 @@
 
 ## VirtualBox / Vagrant / Ansible
 
-VirtualBox, Vagrant, and Ansible are required. Follow the steps below:
+VirtualBox, Vagrant >= 1.1, and Ansible are required. Follow the steps below:
 
 ### Linux / Ubuntu  
 
