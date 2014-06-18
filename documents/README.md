@@ -10,4 +10,5 @@ Please read the documents in the following order
 * [DataSharing.md](DataSharing.md)
 * [DataProcessing.md](DataProcessing.md)
 * [ComputationalEnvironment.md](ComputationalEnvironment.md)
+* [Workflow.md](Workflow.md)
 
