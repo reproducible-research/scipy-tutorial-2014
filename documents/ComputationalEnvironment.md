@@ -18,8 +18,9 @@ scipy-tutorial-2014/scripts/vagrant.
 > cd path_to_Vagrantfile 
 > vagrant up
 
+## Manual
 
-
+Run the *check_env.py* to ensure that all required Python packages and executables are installed.
 
 
 
