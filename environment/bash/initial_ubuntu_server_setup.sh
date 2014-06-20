@@ -16,6 +16,7 @@ sudo apt-get install python-dev
 sudo apt-get install python-pip
 sudo apt-get install python-numpy
 sudo apt-get install python-matplotlib
+sudo apt-get install ffmpeg
 
 sudo easy_install SimpleITK
 
