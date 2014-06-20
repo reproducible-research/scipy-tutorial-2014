@@ -11,6 +11,10 @@
     apt: name=git state=present
     sudo: yes
 
+  - name: install ffmpeg
+    apt: name=ffmpeg state=present
+    sudo: yes
+
   - name: install python
     apt: name=python2.7-dev state=present
     sudo: yes
