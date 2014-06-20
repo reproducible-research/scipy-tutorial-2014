@@ -29,3 +29,15 @@ cd scipy-tutorial-2014/environment/vagrant
 vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
 vagrant up
 ```
+
+To connect to the machine:
+
+```bash
+vagrant ssh
+```
+
+To shutdown the virtual machine:
+
+```bash
+vagrant halt
+```
