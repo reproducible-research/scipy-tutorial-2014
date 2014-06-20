@@ -22,11 +22,13 @@ for package in required_packages:
         return_value += 1
 
 
-required_executables = ['git', 'dexy', 'ipython', 'nosetests']
+print('')
+required_executables = ['git', 'dexy', 'ipython', 'nosetests', 'ffmpeg']
 for executable in required_executables:
     print('Executing ' + executable + ' ...')
     try:
-        output = subprocess.check_output([executable, '--help'])
+        output = subprocess.check_output([executable, '--help'],
+                                         stderr=subprocess.STDOUT)
     except OSError:
         print('Error: could not execute ' + executable)
         return_value += 1
@@ -35,6 +37,6 @@ for executable in required_executables:
 if return_value is 0:
     print('\nSuccess.')
 else:
-    print('\nAn error was found in your environment, please see the messages ' +
+    print('\nAn defect was found in your environment, please see the messages ' +
           'above.')
 sys.exit(return_value)
