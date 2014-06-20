@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 """Computational environment validation script for the 2014 SciPy Conference Tutorial:
-Reproducible Research: Walking the Walk.
+
+  Reproducible Research: Walking the Walk.
 
 https://github.com/reproducible-research/scipy-tutorial-2014
 """
