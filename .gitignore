@@ -56,3 +56,7 @@ docs/_build/
 dexy/output/
 dexy/.dexy
 dexy/.trash
+
+# Vagrant generated files
+environment/vagrant/.vagrant
+environment/vagrant/vagrant_ansible_inventory_default
