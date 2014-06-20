@@ -37,6 +37,6 @@ for executable in required_executables:
 if return_value is 0:
     print('\nSuccess.')
 else:
-    print('\nAn defect was found in your environment, please see the messages ' +
+    print('\nA defect was found in your environment, please see the messages ' +
           'above.')
 sys.exit(return_value)
