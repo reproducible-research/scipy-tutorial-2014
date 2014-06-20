@@ -20,10 +20,10 @@ Install vagrant from here: http://www.vagrantup.com/downloads.html
 -------------
 
 Once installed, open a new console and change directory to  
-scipy-tutorial-2014/scripts/vagrant. 
+scipy-tutorial-2014/environment/vagrant. 
 
 ```bash
-cd scipy-tutorial-2014/scripts/vagrant
+cd scipy-tutorial-2014/environment/vagrant
 vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
 vagrant up
 ```
