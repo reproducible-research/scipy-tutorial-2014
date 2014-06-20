@@ -1,7 +1,10 @@
+Docker Computational Environment Creation
+=========================================
+
 Installing Docker
 -----------------
 
-You must already have docker installed. See http://docker.io for more information.
+You must already have [docker](http://docker.io) installed. See http://docker.io for more information.
 
 Running Notebooks
 -----------------

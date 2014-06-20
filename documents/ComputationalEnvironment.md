@@ -1,33 +1,16 @@
 # Computational Environment
 
+TODO: Why reproducible computational enviroment is important.  What the
+characteristics of a reproducible computational environment are.
+
 ## Docker
 
-## VirtualBox / Vagrant / Ansible
+TODO: Docker description
 
-VirtualBox, Vagrant >= 1.1, and Ansible are required. Follow the steps below:
+## VM's
 
-### Linux / Ubuntu
+TODO: VM / VM-setup description
 
-```bash
-sudo apt-get install vagrant
-sudo apt-get install ansible
-```
+## Package managers and distributions
 
-### MacOS and Windows
-
-Install vagrant from here: http://www.vagrantup.com/downloads.html
-
--------------
-
-Once installed, open a new console and change directory to
-scipy-tutorial-2014/environment/vagrant.
-
-```bash
-cd scipy-tutorial-2014/environment/vagrant
-vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
-vagrant up
-```
-
-## Manual
-
-Run the *check_env.py* script to ensure that all required Python packages and executables are installed.
+TODO: package manager and distribution description
