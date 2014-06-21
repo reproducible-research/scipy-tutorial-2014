@@ -1,4 +1,4 @@
-FROM       phusion/baseimage
+FROM       phusion/baseimage:35c2d5a269ff
 MAINTAINER Ana Nelson <ana@ananelson.com>
 
 RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || :
