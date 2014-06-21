@@ -20,6 +20,13 @@ sudo apt-get install ffmpeg
 
 sudo easy_install SimpleITK
 
+
+#
+# Installing dexy
+#
+sudo pip install dexy
+
+
 #
 # Notebook scripts
 #
