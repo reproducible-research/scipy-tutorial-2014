@@ -10,12 +10,16 @@
   - name: install git
     apt: name=git state=present
     sudo: yes
-    
+
+  - name: install ffmpeg
+    apt: name=ffmpeg state=present
+    sudo: yes
+
   - name: install python
     apt: name=python2.7-dev state=present
-    sudo: yes  
+    sudo: yes
 
-  - name: install build-essential 
+  - name: install build-essential
     apt: name=build-essential state=present
     sudo: yes
 
@@ -27,15 +31,15 @@
     apt: name=libpng-dev state=present
     sudo: yes
 
-  - name: install gfortran 
+  - name: install gfortran
     apt: name=gfortran state=present
     sudo: yes
 
-  - name: install libopenblas-dev 
+  - name: install libopenblas-dev
     apt: name=libopenblas-dev state=present
     sudo: yes
 
-  - name: install liblapack-dev 
+  - name: install liblapack-dev
     apt: name=liblapack-dev state=present
     sudo: yes
 
@@ -65,4 +69,20 @@
 
   - name: install SimpleITK
     easy_install: name=SimpleITK
+    sudo: yes
+
+  - name: install git
+    apt: name=git state=latest
+    sudo: yes
+
+  - name: install vim
+    apt: name=vim state=latest
+    sudo: yes
+
+  - name: install emacs
+    apt: name=emacs state=latest
+    sudo: yes
+
+  - name: install python-nose
+    pip: name=nose
     sudo: yes

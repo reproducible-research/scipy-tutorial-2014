@@ -52,3 +52,11 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
+# Dexy generated files
+dexy/output/
+dexy/.dexy
+dexy/.trash
+
+# Vagrant generated files
+environment/vagrant/.vagrant
+environment/vagrant/vagrant_ansible_inventory_default
