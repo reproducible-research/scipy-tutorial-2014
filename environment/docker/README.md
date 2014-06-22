@@ -86,3 +86,6 @@ or *docker <subcommand>* with no arguments.
 docker
 docker start
 ```
+
+It is also possible to share your Docker images on the web and archive them
+with the *push* and *export* commands.
