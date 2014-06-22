@@ -28,8 +28,10 @@ required_executables = ['git', 'dexy', 'ipython', 'nosetests', 'mplayer']
 for executable in required_executables:
     print('Executing ' + executable + ' ...')
     try:
-        output = subprocess.check_output([executable, '--help'],
-                                         stderr=subprocess.STDOUT)
+        process = subprocess.Popen([executable, '--help'],
+                                          stderr=subprocess.STDOUT,
+                                          stdout=subprocess.PIPE)
+        process.wait()
     except OSError:
         print('Error: could not execute ' + executable)
         return_value += 1
