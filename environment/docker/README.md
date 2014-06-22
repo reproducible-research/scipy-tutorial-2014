@@ -73,10 +73,10 @@ docker port ipython 8888
 If this returns *0.0.0.0:49155*, for example, point your browser to
 http://localhost:49155.
 
-To stop the container and remove the container,
+To stop and remove the container,
 ```bash
 docker stop
-docker ls
+docker rm
 ```
 
 For a full list of docker commands or docker subcommand help, enter *docker*
