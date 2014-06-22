@@ -15,8 +15,8 @@ Speakers
 --------
 
 * Aashish Chaudhary
+* Aidan Feldman
 * Ana Nelson
-* Arfon Smith
 * Jean-Christophe Fillion-Robin
 * Jeffrey Spies
 * Luis Ibanez
