@@ -1,0 +1,5 @@
+# Runs the command "dexy"
+FROM       reproducible
+MAINTAINER Ana Nelson <ana@ananelson.com>
+
+CMD dexy

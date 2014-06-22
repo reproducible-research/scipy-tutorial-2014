@@ -22,42 +22,67 @@ At the end of the build process, you should see output like this:
 Successfully built 7b7bc4cbc144
 ```
 
-Running Notebooks
------------------
+We can also build two other convenience images built on top of our
+*reproducible* image.
 
-To install and run IPython notebooks in a docker container, run the
-`run-docker-interactive.sh` script from within this directory.
-
-At the end of the build process, you should see output like this:
-
-```
-Successfully built 7b7bc4cbc144
-repro@c4601f2ecc0b:~$
+```bash
+docker build -t reproducible/dexy - < ./Dockerfile-dexy
+docker build -t reproducible/ipython - < ./Dockerfile-ipython
 ```
 
-You are now in a Docker container.
 
-If you want to run the IPython notebook server from within this container, cd
-to the `example` directory and run the `run-ipython.sh` script:
+Running Docker
+--------------
 
+To enter the *image* with your HOME directory mounted as a *volume*
+
+```bash
+docker run -v $HOME:/home/reproducible -i -t reproducible /bin/bash
 ```
-repro@c4601f2ecc0b:~/example$ ls
-README.md  ReproducibleResearch.ipynb  run-ipython.sh
-repro@c4601f2ecc0b:~/example$ bash run-ipython.sh
+
+You are now in a Docker *container*. The *-i -t* tell docker to
+start up a pseudo-terminal and keep stdin open. Enter *exit* to
+exit the shell.
+
+To run dexy,
+
+```bash
+cd ../../../scipy-tutorial-2014/dexy
+docker run -v $PWD:/home/reproducible reproducible/dexy
 ```
 
-Using `ifconfig` in the container, determine the IP address, and, using your
-normal web browser, navigate to that address plus `:8888` to view the notebook.
+To start the IPython notebook,
 
-Or you can determine the container's IP address via `docker inspect c4601`
-where c4601 is the start of the container ID, which is visible at the command
-prompt (after `repro@`)
+```bash
+cd ../../scipy-tutorial-2014/notebooks
+docker run -d -P -v $PWD:/home/reproducible --name ipython reproducible/ipython
+```
 
-Running Dexy
-------------
+This runs the Docker *container* in the background, makes the ports listening
+available on the host, mounts the current working directory, and gives the
+container the name *ipython*.
 
-The `run-dexy-in-docker.sh` script creates a Docker container which has all
-necessary software to run `dexy` on the `dexy/` directory and generate
-reproducible research from the sources there.
+To get information on the containers running and the ports available from a
+given container,
 
+```bash
+docker ps
+docker port ipython 8888
+```
 
+If this returns *0.0.0.0:49155*, for example, point your browser to
+http://localhost:49155.
+
+To stop the container and remove the container,
+```bash
+docker stop
+docker ls
+```
+
+For a full list of docker commands or docker subcommand help, enter *docker*
+or *docker <subcommand>* with no arguments.
+
+```bash
+docker
+docker start
+```

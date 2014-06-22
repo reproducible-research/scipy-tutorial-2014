@@ -60,3 +60,6 @@ dexy/.trash
 # Vagrant generated files
 environment/vagrant/.vagrant
 environment/vagrant/vagrant_ansible_inventory_default
+
+# Files generated when running from docker.
+*.ipython
