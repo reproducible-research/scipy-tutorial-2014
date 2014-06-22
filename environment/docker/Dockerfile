@@ -39,15 +39,15 @@ RUN pip install dexy
 ### "itk"
 RUN easy_install SimpleITK
 
-### "repro-user"
-RUN useradd -m -p $(perl -e'print crypt("foobarbaz", "aa")') repro
-RUN adduser repro sudo
+### "mplayer"
+RUN apt-get install -y mplayer
 
-RUN chown -R repro /home/repro
+### "normal user"
+RUN useradd -m reproducible
+RUN adduser reproducible sudo
+
+RUN chown -R reproducible /home/reproducible
 
 ### "activate-user"
-ENV HOME /home/repro
-USER repro
-
-WORKDIR /home/repro/example
-CMD dexy
+ENV HOME /home/reproducible
+USER reproducible

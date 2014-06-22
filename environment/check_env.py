@@ -24,7 +24,7 @@ for package in required_packages:
 
 
 print('')
-required_executables = ['git', 'dexy', 'ipython', 'nosetests', 'ffmpeg']
+required_executables = ['git', 'dexy', 'ipython', 'nosetests', 'mplayer']
 for executable in required_executables:
     print('Executing ' + executable + ' ...')
     try:

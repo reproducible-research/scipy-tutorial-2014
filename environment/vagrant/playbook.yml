@@ -11,8 +11,8 @@
     apt: name=git state=present
     sudo: yes
 
-  - name: install ffmpeg
-    apt: name=ffmpeg state=present
+  - name: install mplayer
+    apt: name=mplayer state=present
     sudo: yes
 
   - name: install python
