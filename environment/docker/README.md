@@ -6,6 +6,22 @@ Installing Docker
 
 You must already have [docker](http://docker.io) installed. See http://docker.io for more information.
 
+Build the Docker Images
+-----------------------
+
+We need to build the Docker images, our reproducible computational
+environments.  First, build the base image.
+
+```bash
+docker build -t reproducible .
+```
+
+At the end of the build process, you should see output like this:
+
+```
+Successfully built 7b7bc4cbc144
+```
+
 Running Notebooks
 -----------------
 
@@ -43,3 +59,5 @@ Running Dexy
 The `run-dexy-in-docker.sh` script creates a Docker container which has all
 necessary software to run `dexy` on the `dexy/` directory and generate
 reproducible research from the sources there.
+
+
