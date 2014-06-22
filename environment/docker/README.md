@@ -40,7 +40,7 @@ To enter the *image* with your HOME directory mounted as a *volume*
 docker run -v $HOME:/home/reproducible -i -t reproducible /bin/bash
 ```
 
-You are now in a Docker *container*. The *-i -t* tell docker to
+You are now in a Docker *container*. The *-i -t* tells docker to
 start up a pseudo-terminal and keep stdin open. Enter *exit* to
 exit the shell.
 
