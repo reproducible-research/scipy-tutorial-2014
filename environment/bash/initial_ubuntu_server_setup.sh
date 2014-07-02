@@ -18,6 +18,7 @@ sudo apt-get install python-numpy
 sudo apt-get install python-matplotlib
 sudo apt-get install mplayer
 sudo apt-get install imagej
+sudo apt-get install pandoc
 
 sudo easy_install SimpleITK
 
