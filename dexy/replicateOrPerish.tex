@@ -1,0 +1,83 @@
+
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+\title{Replicate or Perish!}
+\author{Antonie Leeuwenhoek}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+
+In the year of 1657 I discovered very small living creatures in rain water.
+
+If you are a true scientist, you are not to believe my verbal description of these
+findings. Instead you must pursue the replication of my observations.
+
+The key feature of Scientific work is not ``Novelty'' but ``Reproducibility''.
+
+\section{Introduction}
+
+This article illustrates how to create a ``Reproducible Research'' report.
+
+\section{Input Data}
+
+The input data was taken from a Tralitus Saltator (sand hopper) specimen, found
+minding its own business in the beach of Saint Jacut de la Mer in France on
+June 23 2014 at 8:10am.
+
+This work was done by Reproducible Research Warriors in training at the Summer
+School on Biomedical Imaging.
+
+Image of the specimen where acquired using mobile phone cameras and a drop of
+water as a single-lens microscope.
+
+\includegraphics[width=5cm]{TralitusSaltrator.jpg}
+
+\section{Image Analysis}
+
+Image analysis was performed with the SimpleITK package invoked from Python
+through an IPython notebook.
+
+\url{https://github.com/reproducible-research/scipy-tutorial-2014/blob/master/notebooks/00-ReproducibleResearch.ipynb}
+
+The eye structure of the Trilitus Saltator was segmented using a region growing
+method based on color similarity.
+
+\section{Results}
+
+The resulting image of the segmented eye is presented below
+
+\includegraphics[width=5cm]{SegmentedEyeOverlay.png}
+
+\section{History}
+
+\url{https://royalsociety.org/about-us/history/}
+
+The origins of the Royal Society lie in an ``Invisible College'' of natural
+philosophers who began meeting in the mid-1640s to discuss the new philosophy
+of promoting knowledge of the natural world through observation and experiment,
+which we now call science.
+
+The Society was to meet weekly to witness experiments and discuss what we would
+now call scientific topics. The first Curator of Experiments was Robert Hooke.
+It was Moray who first told the King, Charles II, of this venture and secured
+his approval and encouragement. At first apparently nameless, the name The
+Royal Society first appears in print in 1661, and in the second Royal Charter
+of 1663 the Society is referred to as 'The Royal Society of London for
+Improving Natural Knowledge'.
+
+\section{Nullius in Verba}
+
+The Royal Society's motto ``Nullius in verba'' roughly translates as ``take
+nobody's word for it''. It is an expression of the determination of Fellows to
+withstand the domination of authority and to verify all statements by an appeal
+to facts determined by experiment.
+
+\end{document}
+
