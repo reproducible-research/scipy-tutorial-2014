@@ -32,6 +32,7 @@ Getting started slide with time-consuming tasks (5 min)
 Introduction (10min) - Luis
 
 * History of scientific societies and publications
+  * http://54.225.78.7/LearningEncounters/Reproducible-Research-Part-I/#/
   * Leeuwenhoek was the Man !
   * The Invisible College
   * Nullius in Verba
@@ -64,7 +65,8 @@ Data Sharing (30min)
 
 ### Local Data Processing
 
-* Computational Environment (20min)
+Computational Environment (20min) - Aashish
+
 * Package versioning
 * Virtual Machines
 * Docker
@@ -88,7 +90,7 @@ Revision Control with Git (20min) - Steve
 
 ### IPython Notebooks and SimpleITK
 
-Python scripts (20min) Matt
+Python SimpleITK scripts (20min) Matt
 
 * Data analysis, particle counting.
 * Hands on:
@@ -97,7 +99,7 @@ Python scripts (20min) Matt
 
 
 
-Break (15min)
+## Break (15min)
 
 ## Third Session
 
