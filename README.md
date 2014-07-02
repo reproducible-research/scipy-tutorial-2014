@@ -1,11 +1,9 @@
-Reproducible Research: Walking the Walk
-=======================================
+# Reproducible Research: Walking the Walk
 
 Tutorial on reproducible research at SciPy 2014.
 
 
-Description
------------
+## Description
 
 This tutorial will train **reproducible research warriors** on the *practices
 and tools that make experimental verification possible with an end-to-end data
@@ -17,8 +15,7 @@ Attendees are expected to have basic familiarity with [scientific
 Python](http://scipy.org) and [Git](http://git-scm.org).
 
 
-Speakers
---------
+## Speakers
 
 * Aashish Chaudhary
 * Ana Nelson
@@ -28,8 +25,7 @@ Speakers
 * Steve Smith
 
 
-Duration
---------
+## Duration
 
 The tutorial will cover four hours, but *preparation is required*.
 
