@@ -23,7 +23,9 @@
 
 Getting started slide with time-consuming tasks (5 min)
 
-* Clone repo (Arfon)
+Verify the [Preparation.md](Preparation.md)
+
+* Clone repo
 * Create venv
 * Start IPython Notebook locally
 
@@ -42,6 +44,7 @@ Introduction (10min) - Luis
 Replication of the early microscope experiments by Antonie Leeuwenhoek
 
 * Data collection - Image Acquisition (15 min) Matt and Luis
+  * [DataAcquisition.md](DataAcquisition.md)
   * Hands on: Cell camera phone microscope
   * With drop of water
   * Hands on: Each pair acquires images
@@ -50,6 +53,7 @@ Replication of the early microscope experiments by Antonie Leeuwenhoek
 
 Data Sharing (30min)
 
+* [DataSharing.md](DataSharing.md)
 * Image gathering, storage, and sharing (15min) - Luis
   * Figshare (www.figshare.com)
   * MIDAS (www.midasplatform.com)
@@ -67,6 +71,7 @@ Data Sharing (30min)
 
 Computational Environment (20min) - Aashish
 
+* [ComputationalEnvironment.md](ComputationalEnvironment.md)
 * Package versioning
 * Virtual Machines
 * Docker
@@ -92,6 +97,7 @@ Revision Control with Git (20min) - Steve
 
 Python SimpleITK scripts (20min) Matt
 
+* [DataProcessing.md](DataProcessing.md)
 * Data analysis, particle counting.
 * Hands on:
   * Run scripts on new data
