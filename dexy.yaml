@@ -3,8 +3,13 @@ website:
   - assets
 
 render-documents:
-  - README.md|markdown|jinja:
+  - README.md|resub|markdown|jinja:
     - output-name: "index.html"
+    - resub: { expressions: [["\\.md", ".html"]] }
+  - documents/README.md|markdown|jinja:
+    - output-name: "index.html"
+  - documents/*.md|markdown|jinja:
+    - except: "README"
 
 assets:
   - .css
