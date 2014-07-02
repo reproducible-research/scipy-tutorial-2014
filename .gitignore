@@ -57,7 +57,7 @@ dexy/output/
 dexy/.dexy
 dexy/.trash
 .dexy
-output/
+output-site/
 
 # Vagrant generated files
 environment/vagrant/.vagrant

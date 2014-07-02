@@ -1,7 +1,10 @@
 website:
   - render-documents
+  - assets
 
 render-documents:
-  - README.md|markdown:
+  - README.md|markdown|jinja:
     - output-name: "index.html"
-    - output: True
+
+assets:
+  - .css
