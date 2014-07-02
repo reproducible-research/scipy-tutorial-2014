@@ -1,0 +1,7 @@
+website:
+  - render-documents
+
+render-documents:
+  - README.md|markdown:
+    - output-name: "index.html"
+    - output: True
