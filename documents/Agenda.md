@@ -1,10 +1,21 @@
 # Agenda
 
 * 8:00 am  First Session
-* 9:00 am  First Session
+  * Introduction
+  * Data Acquisition
+  * Data Sharing
+* 9:00 am  Second Session
+  * Data Processing
+  * Revision Control
+  * IPython Notebook - SimpleITK
 * 10:00 am Break
 * 10:15 am Third Session
+  * Testing
+  * Modern Scientific Publishing
+  * Dexy
 * 11:00 am Fourth Session
+  * Insight Journal
+  * Replication
 
 ## First Session
 
@@ -25,25 +36,28 @@ Introduction (10min) - Luis
   * The Invisible College
   * Nullius in Verba
 
-### Leeuwenhoek Microscope
+### Data Acquisition.
 
-Replication of the early microscope experiments by Leeuwenhoek
+Replication of the early microscope experiments by Antonie Leeuwenhoek
 
 * Data collection - Image Acquisition (15 min) Matt and Luis
   * Hands on: Cell camera phone microscope
   * With drop of water
   * Hands on: Each pair acquires images
 
-* Data Sharing (45min)
-  * Image gathering, storage, and sharing (15min) - Luis
-    * Figshare (www.figshare.com)
-    * MIDAS (www.midasplatform.com)
-    * Girder (http://girder.readthedocs.org/en/latest)
-    * Hands on: Upload the images
-  * Hands on: Download data via RESTful API (15min)
-    * Provenance and
-    * Python scripts
-    * Hands on: Download the data via HTTP
+### Data Sharing
+
+Data Sharing (30min)
+
+* Image gathering, storage, and sharing (15min) - Luis
+  * Figshare (www.figshare.com)
+  * MIDAS (www.midasplatform.com)
+  * Girder (http://girder.readthedocs.org/en/latest)
+  * Hands on: Upload the images
+* Hands on: Download data via RESTful API (15min)
+  * Provenance and
+  * Python scripts
+  * Hands on: Download the data via HTTP
 
 
 ## Second Session
@@ -72,11 +86,6 @@ Revision Control with Git (20min) - Steve
   * Push the branch
   * Create a citable version: https://guides.github.com/activities/citable-code/
 
-
-Break (15min)
-
-## Third Session
-
 ### IPython Notebooks and SimpleITK
 
 Python scripts (20min) Matt
@@ -85,6 +94,12 @@ Python scripts (20min) Matt
 * Hands on:
   * Run scripts on new data
   * Generate histogram for the data
+
+
+
+Break (15min)
+
+## Third Session
 
 ### Testing
 
@@ -96,11 +111,9 @@ Testing (30min)  Jc
   * Run tests
   * Add coverage for another method to the unit tests
 
-## Fourth Session
+### Modern Scientific Publishing
 
-### Modern Scientific Publications
-
-Publication Tools (30min) Ana
+Publication Tools - Dexy (30min) Ana
 
 * Article generation
 * RST to HTML, etc
@@ -108,14 +121,19 @@ Publication Tools (30min) Ana
 * Hands on:
   *  Run dexy to generate a PDF document
 
+
+## Fourth Session
+
 ### Insight Journal
+
+Submitting an article to a Reproducible Journal (20 min)
 
 * Submit Article to the Insight Journal
 * Point to github fork, for source code
 
 ### Replicate or Perish !
 
-Attempt to replicate articles
+Attempt to replicate articles (40 min)
 
 * Group assignment
 * Replication attempt
