@@ -1,5 +1,10 @@
-### Create a project
+### OpenScienceFramework
 
+TODO: overall description of OSF
+
+## Create a project
+
+Sign up for a free OpenScienceFramework account at [https://osf.io/login/]
 Create a project on the Open Science Framework (http://osf.io). Click on the contributors link, and add a contributor. Edit the project's wiki to reflect the goals of the study.
 
 ### Registration

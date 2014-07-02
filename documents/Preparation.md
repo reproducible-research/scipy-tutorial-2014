@@ -2,33 +2,18 @@
 
 This document describes the steps required to prepare for this tutorial.
 
-## Accounts
+## Clone a Fork of the Tutorial Repository
 
-### Gmail
+![Forking](https://help.github.com/assets/help/fork-a-repo-e50d51c694939c58b2f83c58fc679c4e.gif)
 
-Sign up for a free gmail account at [https://accounts.google.com/signup?service=mail]
+1. [Sign up](https://github.com/join) for a free [GitHub](https://github.com) account.
+2. [Create a fork](https://help.github.com/articles/fork-a-repo) of [the tutorial repository](https://github.com/reproducible-research/scipy-tutorial-2014).
+3. [Clone the fork locally](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository) with the [SSH protocol](http://git-scm.com/book/en/Git-on-the-Server-The-Protocols#The-SSH-Protocol).
 
-### Github
-
-Sign up for a free github account at [https://github.com/join].
-
-### Figshare
+## Sign up for a Figshare account.
 
 Sign up for a free Figshare account at [https://figshare.com/account/register].
 
-### MIDAS
-
-Sign up for a free MIDAS account at [http://midas3.kitware.com/midas/#].
-
-### Girder
-
-Sign up for a free Girder account at [http://54.221.241.247:8080].
-
-### OpenScienceFramework
-
-Sign up for a free OpenScienceFramework account at [https://osf.io/login/]
-
-## Computational Environment
+## Build your computational environment.
 
 See the ComputationalEnvironment document for instructions on how to set up the computational environment.
-
