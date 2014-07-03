@@ -22,4 +22,4 @@ logo](https://www.digital-science.com/system/images/W1siZiIsIjIwMTIvMDUvMDkvMTcv
 
 ![Docker logo](https://www.dotcloud.com/static/img_2012/docker_logo.png)
 
-1. Follow the directions in the [Docker excercise document](../environment/docker/) to set up your reproducible computational environment.
+1. Follow the directions in the [Docker exercise document](../environment/docker/) to set up your reproducible computational environment.

@@ -5,6 +5,8 @@
 In this hands-on exercise, we will learn how to create and use a reproducible
 computational enviroment with Docker.
 
+[TOC]
+
 ## Installing Docker
 
 You must already have [Docker](http://docker.io) installed. See the [Docker
@@ -18,8 +20,11 @@ manage a VirtualBox virtual machine running the docker client and daemon.
 
 ## Build the Docker Images
 
-We need to build the Docker images, our reproducible computational
-environments.  First, build the base image:
+We need to build the Docker *images*, our reproducible computational
+environments. Docker images are built from a set of instructions, the
+[Dockerfile](http://docs.docker.com/reference/builder/).
+After changing to the current directory,
+`scipy-tutorial-2014/environement/docker`, build the base image:
 
 {{ d['build-and-run.sh|idio']['build-reproducible'] }}
 
@@ -38,7 +43,7 @@ or to start up the IPython notebook.
 
 ## Running Docker
 
-To enter the *image* with your HOME directory mounted as a *volume*
+To enter the *image*,
 
 {{ d['enter-environment.sh|idio']['enter'] }}
 
