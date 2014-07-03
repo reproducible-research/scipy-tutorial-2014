@@ -93,4 +93,4 @@ or *docker subcommand* with no arguments.
 
 It is also possible to [share your Docker images](https://hub.docker.com/)
 with the [push](https://docs.docker.com/reference/commandline/cli/#push)
-[export](://docs.docker.com/reference/commandline/cli/#export) commands.
+and [export](://docs.docker.com/reference/commandline/cli/#export) commands.
