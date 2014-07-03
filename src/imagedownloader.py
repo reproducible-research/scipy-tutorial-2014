@@ -17,7 +17,7 @@ class ImageDownloader(object):
     def set_image_name(self,image_name):
       self.image_name = image_name
 
-    def dowload(self):
+    def download(self):
       figshare_url = "http://api.figshare.com/v1/articles/%s" % self.figshare_id
       f = urllib.urlopen(figshare_url)
       info = json.load(f)

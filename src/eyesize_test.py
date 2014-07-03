@@ -11,6 +11,7 @@ def eye_test():
 
   downloader.set_figshare_id("1066744")
   downloader.set_image_name(image_name)
+  downloader.download()
 
   input_image = sitk.ReadImage(image_name)
 
