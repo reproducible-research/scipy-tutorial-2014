@@ -17,7 +17,8 @@ def eye_test():
 
   estimator.set_image(input_image)
   estimator.set_seed_point([204,400])
-  radius_estimate = estimator.estimate()
+
+  eyes_segmented,radius_estimate = estimator.estimate()
 
   return radius_estimate == 8.5 
 

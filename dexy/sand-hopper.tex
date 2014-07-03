@@ -40,7 +40,10 @@ School on Biomedical Imaging.
 Image of the specimen where acquired using mobile phone cameras and a drop of
 water as a single-lens microscope.
 
+\begin{figure}
 \includegraphics[width=5cm]{TralitusSaltrator.jpg}
+\caption{Input image of the Talitrus Saltrator Specimen}
+\end{figure}
 
 \section{Image Analysis}
 
@@ -53,18 +56,21 @@ method based on color similarity.
 
 The resulting image of the segmented eye is presented below
 
+\begin{graphics}
 \includegraphics[width=5cm]{SegmentedEyeOverlay.png}
+\caption{Segmentation of the Eye, overlaid on the input image}
+\end{graphics}
 
 This image was generated via:
 
-<< d['00.py|idio|l']['segmented'] >>
+<< d['../src/eyesize.py|idio|l']['segmented'] >>
 
 The smallest radius of the eye structure was estimated using a distance map,
 and the value found was << d['image-analysis.json'].radius >>.
 
 The radius was calculated via:
 
-<< d['00.py|idio|l']['radius'] >>
+<< d['../src/eyesize.py|idio|l']['radius'] >>
 
 \section{History}
 

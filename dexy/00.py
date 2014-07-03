@@ -1,48 +1,34 @@
 # -*- coding: utf-8 -*-
 import SimpleITK as sitk
 import json
-import numpy as np
-import urllib
+import sys
 
-def figshare_info(fig_id):
-    figshare_url = "http://api.figshare.com/v1/articles/%s" % fig_id
-    f = urllib.urlopen(figshare_url)
-    return json.load(f)
+sys.path.append('../src')
 
-info = figshare_info("1066744")
-image_url = info['items'][0]['files'][0]['download_url']
+import eyesize
+import imagedownloader
 
-image_file = "TralitusSaltrator.jpg"
-urllib.urlretrieve(image_url, image_file)
+downloader = imagedownloader.ImageDownloader()
+estimator = eyesize.EyeSize()
 
-image = sitk.ReadImage(image_file)
+image_name = "TralitusSaltrator.jpg"
 
+downloader.set_figshare_id("1066744")
+downloader.set_image_name(image_name)
+downloader.download()
 
-mimage = sitk.VectorMagnitude(image)
-assert mimage.GetNumberOfComponentsPerPixel() == 1
+input_image = sitk.ReadImage(image_name)
 
-otsu = sitk.OtsuThresholdImageFilter()
-bimage = otsu.Execute(mimage)
-sitk.WriteImage(bimage,'OtsuThreshold.png')
+estimator.set_image(input_image)
+estimator.set_seed_point([204,400])
 
+eyes_segmented,radius_estimate = estimator.estimate()
 
-### "segmented"
-color_region_growing = sitk.VectorConfidenceConnectedImageFilter()
-color_region_growing.SetNumberOfIterations(4)
-color_region_growing.SetMultiplier(5.3)
-color_region_growing.SetInitialNeighborhoodRadius(2)
-color_region_growing.SetReplaceValue(255)
-color_region_growing.AddSeed([204,400])
-eyes_segmented = color_region_growing.Execute(image);
-image_overlay = sitk.LabelOverlay(mimage, eyes_segmented)
+magnitude_image = sitk.VectorMagnitude(input_image)
+
+image_overlay = sitk.LabelOverlay(magnitude_image, eyes_segmented)
 sitk.WriteImage(image_overlay,'SegmentedEyeOverlay.png')
 
-
-### "radius"
-distance_filter = sitk.SignedMaurerDistanceMapImageFilter()
-distance_filter.SetInsideIsPositive(True)
-distance_map = distance_filter.Execute(eyes_segmented)
-radius_estimate = np.amax(sitk.GetArrayFromImage(distance_map))
 
 ### "save-results"
 results = {}
