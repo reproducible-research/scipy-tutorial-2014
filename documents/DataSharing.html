@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../website/style.css">
+  </head>
+  <body>
+    <h1 id="data-sharing">Data Sharing</h1>
+<p>Now that we have acquired several images in the mobile device, it is time to
+move these images to an online platform where they can be cataloged, linked to,
+and downloaded.</p>
+<p>Here we are going to perform this in two steps:</p>
+<ul>
+<li>Export images from the mobile device</li>
+<li>Upload images to a data sharing web site</li>
+</ul>
+<h2 id="exporting-images">Exporting images</h2>
+<p>There are many options for exporting images, depending on the type of mobile
+device that you are using. Here we will explore a few. They are not necessarily
+optimal for regular scientific work, but they will take us end-to-end through
+this exercise.</p>
+<h3 id="google">Google+</h3>
+<p>If you are using an Android device, this might be the most straight-forward method to use.</p>
+<ul>
+<li>Share the image as a post in G+</li>
+<li>Install in your computer the Google command line tool:</li>
+<li>[https://code.google.com/p/googlecl]</li>
+<li>To get the list of all your albums</li>
+<li>Use the command:  google picasa list-albums &gt; myalbums.txt</li>
+<li>To get the list of all your pictures</li>
+<li>Use the command: google picasa list &gt; mypictures.txt</li>
+<li>Identify the URL of the pictures that you posted</li>
+</ul>
+<h3 id="twitter">Twitter</h3>
+<ul>
+<li>Tweet the image using the hashtags</li>
+<li>
+<h1 id="reproducibleresearch">reproducibleresearch</h1>
+</li>
+<li>
+<h1 id="scipy">scipy</h1>
+</li>
+<li>
+<h1 id="openscience">openscience</h1>
+</li>
+</ul>
+<h3 id="email">Email</h3>
+<ul>
+<li>Using the Sharing options, email the image to yourself.</li>
+<li>You may want to use your Gmail account for this purpuose.</li>
+</ul>
+<h2 id="sharing-images">Sharing images</h2>
+<p>Now that you have brought the images to a hard disk, you can upload them to both of your data sharing accounts.</p>
+<h3 id="figshare">Figshare</h3>
+<ul>
+<li>Login in your Figshare account [http://figshare.com/account/my_data]</li>
+<li>Create a new project, titled: Reproducible Research Training</li>
+<li>Upload images to this project</li>
+<li>For a given image take note of its identifier:</li>
+<li>For example: [http://figshare.com/articles/Tardigrades_Image_01/1050595]</li>
+<li>Will have the identifier: 1050595</li>
+<li>Use the identifier in the following way to get the article metadata:</li>
+<li>http://api.figshare.com/v1/articles/1050595</li>
+<li>This will return a JSON structure such as</li>
+</ul>
+<p>{"count": 1, "items": [{"article_id": 1050595, "title": "Image 002", "figshare_url": "http://figshare.com/articles/Image_002/1050595", "views": 1, "downloads": 0, "shares": 0, "doi": "http://dx.doi.org/10.6084/m9.figshare.1050595", "publisher_doi": "", "publisher_citation": "", "master_publisher_id": 0, "defined_type": "figure", "status": "Public", "version": 1, "published_date": "23:09, Jun 14, 2014", "description": "<p>Image of Tardigrade acquired with a cell phone water drop microscope</p>", "description_nohtml": "Image of Tardigrade acquired with a cell phone water drop microscope", "total_size": "85.10 KB", "owner": {"id": 97454, "full_name": "Luis Ibanez"}, "authors": [{"first_name": "Luis", "last_name": "Ibanez", "id": 97454, "full_name": "Luis Ibanez"}], "tags": [{"id": 247678, "name": "diy microscopy"}, {"id": 98329, "name": "tardigrades"}], "categories": [{"id": 12, "name": "Cell Biology"}, {"id": 8, "name": "Microbiology"}], "files": [{"thumb": "http://previews.figshare.com/1526484/250_1526484.jpg", "download_url": "http://files.figshare.com/1526484/IMG_20140331_131717.jpeg", "name": "IMG_20140331_131717.jpeg", "id": 1526484, "mime_type": "image/jpeg", "size": "87 KB"}], "links": []}]}</p>
+<ul>
+<li>Look for the "download_url" tag.</li>
+<li>Now we can refer to to actual file by using the "download_url" as</li>
+<li>http://files.figshare.com/1526484/IMG_20140331_131717.jpeg</li>
+</ul>
+<p>More on the Figshare API at [http://api.figshare.com/docs/]</p>
+<h3 id="girder">Girder</h3>
+<ul>
+<li>Login in your Girder account</li>
+<li>Create a folder called 'ReproducibleResearch'</li>
+<li>Upload the images to this folder</li>
+<li>Share the link to the folder with your peers</li>
+<li>Downloading a file through the API</li>
+<li>Look at the Item, for example [http://54.221.241.247:8080/#item/539c7a298d72b60edb223ec9]</li>
+<li>The last number in the URL is the Item ID: 539c7a298d72b60edb223ec9</li>
+<li>The page will show you the file name as: IMG_20140331_131725.jpeg</li>
+<li>We can combine the two in a URL of the form:</li>
+<li>http://54.221.241.247:8080/api/v1/file/ItemID/download/FileName</li>
+<li>For example<ul>
+<li>http://54.221.241.247:8080/api/v1/file/539c7a298d72b60edb223eca/download/IMG_20140331_131725.jpeg</li>
+</ul>
+</li>
+</ul>
+<p>More on the Girder API at [http://54.221.241.247:8080/api/v1]
+More on the Girder Documentation [http://girder.readthedocs.org]</p>
+  </body>
+</html>

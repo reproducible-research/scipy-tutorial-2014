@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../website/style.css">
+    <link rel="stylesheet" type="text/css" href="../../website/pygments.css">
+  </head>
+  <body>
+    <h1 id="docker-compute-environment">Docker Compute Environment</h1>
+<p><img alt="Docker logo" src="http://www.docker.com/static/img/nav/docker-logo-loggedout.png" /></p>
+<p>In this hands-on exercise, we will learn how to create and use a reproducible
+computational enviroment with Docker.</p>
+<h2 id="installing-docker">Installing Docker</h2>
+<p>You must already have <a href="http://docker.io">Docker</a> installed. See the <a href="http://docs.docker.com/installation/#installation">Docker
+installation documention</a>
+for more information.</p>
+<p>In general this means having a properly configure kernel and the docker client
+and daemon installed on a Linux distribution. On Mac or Windows, the
+installation installation instructions will install a <code>boot2docker</code> utility to
+manage a VirtualBox virtual machine running the docker client and daemon.</p>
+<h2 id="build-the-docker-images">Build the Docker Images</h2>
+<p>We need to build the Docker images, our reproducible computational
+environments.  First, build the base image:</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible .
+</pre></div>
+
+<p>At the end of the build process, you should see output like this:</p>
+<p><code>Successfully built 7b7bc4cbc144</code></p>
+<p>We can also build two other convenience images built on top of our
+<em>reproducible</em> image. These will be used to run just the <code>dexy</code> command
+or to start up the IPython notebook.</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible/dexy - &lt; ./Dockerfile-dexy
+<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker build -t reproducible/ipython - &lt; ./Dockerfile-ipython
+</pre></div>
+
+<h2 id="running-docker">Running Docker</h2>
+<p>To enter the <em>image</em> with your HOME directory mounted as a <em>volume</em></p>
+<div class="highlight"><pre><a name="environment--docker--enter-environment.sh-idio.html-1"></a>docker run -v <span class="nv">$HOME</span>:/home/reproducible -i -t reproducible /bin/bash
+</pre></div>
+
+<p>You are now in a Docker <em>container</em>. The <em>-i -t</em> flags tells docker to start
+up a pseudo-terminal and keep stdin open. Enter <code>exit</code> to exit the shell.</p>
+<p>To run dexy,</p>
+<p><code>bash
+cd ../../../scipy-tutorial-2014/dexy
+docker run -v $PWD:/home/reproducible reproducible/dexy</code></p>
+<p>To start the IPython notebook,</p>
+<p><code>bash
+cd ../../scipy-tutorial-2014/notebooks
+docker run -d -P -v $PWD:/home/reproducible --name ipython reproducible/ipython</code></p>
+<p>This runs the Docker <em>container</em> in the background, makes the ports listening
+available on the host, mounts the current working directory, and gives the
+container the name <em>ipython</em>.</p>
+<p>To get information on the containers running and the ports available from a
+given container,</p>
+<p><code>bash
+docker ps
+docker port ipython 8888</code></p>
+<p>If this returns <em>0.0.0.0:49155</em>, for example, point your browser to
+http://localhost:49155.</p>
+<p>To stop and remove the container,
+<code>bash
+docker stop
+docker rm</code></p>
+<p>For a full list of docker commands or docker subcommand help, enter <em>docker</em>
+or <em>docker <subcommand></em> with no arguments.</p>
+<p><code>bash
+docker
+docker start</code></p>
+<p>It is also possible to share your Docker images on the web and archive them
+with the <em>push</em> and <em>export</em> commands.</p>
+  </body>
+</html>
