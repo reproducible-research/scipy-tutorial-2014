@@ -3,7 +3,7 @@ import SimpleITK as sitk
 import json
 import sys
 
-sys.path.append('../src')
+sys.path.append('./src')
 
 import eyesize
 import imagedownloader
@@ -19,13 +19,13 @@ downloader.download()
 
 input_image = sitk.ReadImage(image_name)
 
+### "segmented"
 estimator.set_image(input_image)
 estimator.set_seed_point([204,400])
-
 eyes_segmented,radius_estimate = estimator.estimate()
 
+### "overlay"
 magnitude_image = sitk.VectorMagnitude(input_image)
-
 image_overlay = sitk.LabelOverlay(magnitude_image, eyes_segmented)
 sitk.WriteImage(image_overlay,'SegmentedEyeOverlay.png')
 

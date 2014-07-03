@@ -38,11 +38,13 @@ This work was done by Reproducible Research Warriors in training at the Summer
 School on Biomedical Imaging.
 
 Image of the specimen where acquired using mobile phone cameras and a drop of
-water as a single-lens microscope.
+water as a single-lens microscope, as shown in Figure~\ref{inputimage}.
 
 \begin{figure}
+\centering
 \includegraphics[width=5cm]{TralitusSaltrator.jpg}
 \caption{Input image of the Talitrus Saltrator Specimen}
+\label{inputimage}
 \end{figure}
 
 \section{Image Analysis}
@@ -54,23 +56,39 @@ method based on color similarity.
 
 \section{Results}
 
-The resulting image of the segmented eye is presented below
+\subsection{Image Segmentation}
 
-\begin{graphics}
+The resulting image of the segmented eye is presented in Figure~\ref{segmentedimage}.
+
+\begin{figure}
+\centering
 \includegraphics[width=5cm]{SegmentedEyeOverlay.png}
 \caption{Segmentation of the Eye, overlaid on the input image}
-\end{graphics}
+\label{segmentedimage}
+\end{figure}
 
-This image was generated via:
+The image was segmented using the helper module ``eyesize'', that internally
+used a region growing segmentation method followed by a distance map. The
+module is invoked the following way:
 
-<< d['../src/eyesize.py|idio|l']['segmented'] >>
+<< d['00.py|idio|l']['segmented'] >>
 
-The smallest radius of the eye structure was estimated using a distance map,
-and the value found was << d['image-analysis.json'].radius >>.
+This module computes both the segmented image, and the estimation of the eye
+structure radius.
 
-The radius was calculated via:
+\subsection{Radius Estimation}
 
-<< d['../src/eyesize.py|idio|l']['radius'] >>
+The smallest radius of the eye structure was estimated using the maximum value
+of the distance map, and the value found was << d['image-analysis.json'].radius >>.
+
+\subsection{Segmentation Overlay}
+
+The resulting segmented image is a binary image, that we can then overlap on
+top of the grayscale version of the input image. This is done with the
+following commands:
+
+<< d['00.py|idio|l']['overlay'] >>
+
 
 \section{History}
 
