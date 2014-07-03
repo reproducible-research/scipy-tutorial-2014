@@ -1,6 +1,8 @@
 # Preparation
 
-This document describes the steps required to prepare for this tutorial.
+This document describes the steps required to prepare for [this tutorial](../).
+
+[TOC]
 
 ## Clone a Fork of the Tutorial Repository
 
