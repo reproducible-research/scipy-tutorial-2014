@@ -20,5 +20,7 @@ def eye_test():
 
   eyes_segmented,radius_estimate = estimator.estimate()
 
+  sitk.WriteImage(eyes_segmented,'SegmentedEye.png')
+
   return radius_estimate == 8.5 
 
