@@ -19,6 +19,8 @@ sudo apt-get install python-matplotlib
 sudo apt-get install mplayer
 sudo apt-get install imagej
 sudo apt-get install pandoc
+sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-latex-extra
 
 sudo easy_install SimpleITK
 
