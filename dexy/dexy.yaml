@@ -3,9 +3,8 @@ replicateOrPerish.tex|jinja|latex:
     - .py|idio|pycon|pyg|l:
     # run this .py file through the interpreter, capturing stdout and adding any new files
     - ../notebooks/checkipnb.py|py:
-        - data/reproducibleData.json
-        - py: { add-new-files: True }
-        - py: { scriptargs: '../notebooks/00-ReproducibleResearch.ipynb' }
+        - reproducibleData.json
+        - py: { scriptargs: '../notebooks/00-ReproducibleResearch.ipynb', add-new-files: True, output-extensions: ['.json'] }
     - _*.tex:
         - output: False
 
