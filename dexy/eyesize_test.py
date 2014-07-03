@@ -1,3 +1,4 @@
+import json
 import eyesize
 
 estimator = eyesize.EyeSize()

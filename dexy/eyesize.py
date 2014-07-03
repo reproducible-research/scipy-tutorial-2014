@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import SimpleITK as sitk
-import json
 import numpy as np
 import urllib
+import json
 
 class EyeSize(object):
 
@@ -29,10 +29,10 @@ class EyeSize(object):
       f = urllib.urlopen(figshare_url)
       info = json.load(f)
       image_url = info['items'][0]['files'][0]['download_url']
-      urllib.urlretrieve(image_url, image_name)
-      self.input_image = sitk.ReadImage(image_name)
+      urllib.urlretrieve(image_url, self.image_name)
+      self.input_image = sitk.ReadImage(self.image_name)
 
-    def estimate():
+    def estimate(self):
       self.get_image()
       color_region_growing = sitk.VectorConfidenceConnectedImageFilter()
       color_region_growing.SetNumberOfIterations(4)
