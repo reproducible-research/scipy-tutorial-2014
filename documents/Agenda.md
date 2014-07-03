@@ -121,7 +121,7 @@ Testing (30min)  Jc
 
 ### Modern Scientific Publishing
 
-Publication Tools - Dexy (30min) Ana
+Literate Programming - Dexy (30min) Ana
 
 * Article generation
 * RST to HTML, etc
