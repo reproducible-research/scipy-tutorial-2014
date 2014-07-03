@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append('../dexy')
+
 import eyesize
 import imagedownloader
 import SimpleITK as sitk
@@ -17,7 +21,10 @@ def eye_test():
 
   estimator.set_image(input_image)
   estimator.set_seed_point([204,400])
-  radius_estimate = estimator.estimate()
+
+  eyes_segmented,radius_estimate = estimator.estimate()
+
+  sitk.WriteImage(eyes_segmented,'SegmentedEye.png')
 
   return radius_estimate == 8.5 
 

@@ -20,6 +20,8 @@ class EyeSize(object):
       self.input_image = input_image
 
     def estimate(self):
+
+### "segmented"
       color_region_growing = sitk.VectorConfidenceConnectedImageFilter()
       color_region_growing.SetNumberOfIterations(4)
       color_region_growing.SetMultiplier(5.3)
@@ -27,9 +29,12 @@ class EyeSize(object):
       color_region_growing.SetReplaceValue(255)
       color_region_growing.AddSeed(self.seed_point)
       eyes_segmented = color_region_growing.Execute(self.input_image)
+
+### "radius"
       distance_filter = sitk.SignedMaurerDistanceMapImageFilter()
       distance_filter.SetInsideIsPositive(True)
       distance_map = distance_filter.Execute(eyes_segmented)
       radius_estimate = np.amax(sitk.GetArrayFromImage(distance_map))
-      return radius_estimate
+
+      return eyes_segmented,radius_estimate
 
