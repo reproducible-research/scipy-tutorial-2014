@@ -26,4 +26,4 @@ logo](https://www.digital-science.com/system/images/W1siZiIsIjIwMTIvMDUvMDkvMTcv
 
 1. Follow the directions in the [Docker exercise document](../environment/docker/) to set up your reproducible computational environment.
 2. Run the [check_env.py](../check_env.py) script with the environment.
-3. Work through [01-SimpleITK-Filtering] exercise from the `notebooks` directory.
+3. Work through *01-SimpleITK-Filtering* exercise from the `notebooks` directory.

@@ -58,9 +58,6 @@ RUN easy_install SimpleITK
 ### "mplayer"
 RUN apt-get install -y mplayer
 
-### "latex"
-RUN apt-get install -y texlive
-
 ### "create-user"
 RUN useradd -m reproducible
 RUN adduser reproducible sudo

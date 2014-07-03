@@ -51,13 +51,6 @@ To enter the *image*,
 You are now in a Docker *container*. The *-i -t* flags tells docker to start
 up a pseudo-terminal and keep stdin open. Enter `exit` to exit the shell.
 
-To run dexy,
-
-{{ d['build-and-run.sh|idio']['run-dexy'] }}
-
-In this case, we mount the local directory as a *volume* in the notebook so we
-can process our local data with the computational environment.
-
 To start the IPython notebook,
 
 {{ d['build-and-run.sh|idio']['start-ipython'] }}
