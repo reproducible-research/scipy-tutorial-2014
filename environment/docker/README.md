@@ -32,7 +32,7 @@ After changing to the current directory,
 At the end of the build process, you should see output like this:
 
 ```
-Successfully built 7b7bc4cbc144
+Successfully built 0bce0a1b0cf0
 ```
 
 We can also build two other convenience images built on top of our
@@ -40,6 +40,16 @@ We can also build two other convenience images built on top of our
 or to start up the IPython notebook.
 
 {{ d['build-and-run.sh|idio']['build-convenience'] }}
+
+At the end of the build processes, you should set output like these:
+
+```
+Successfully built e396018d878e
+```
+
+```
+Successfully built a276b59c9c8d
+```
 
 
 ## Running Docker
@@ -64,7 +74,7 @@ given container,
 
 {{ d['build-and-run.sh|idio']['ipython-ps'] }}
 
-If this returns *0.0.0.0:49153*, we will use the *49155* port.  On Linux, point
+If this returns *0.0.0.0:49153*, we will use the *49153* port.  On Linux, point
 your browser to [http://localhost:49153](http://localhost:49153). On Mac on
 Windows, use `boot2docker` to find the correct IP address,
 
@@ -86,4 +96,4 @@ or *docker subcommand* with no arguments.
 
 It is also possible to [share your Docker images](https://hub.docker.com/)
 with the [push](https://docs.docker.com/reference/commandline/cli/#push)
-and [export](://docs.docker.com/reference/commandline/cli/#export) commands.
+and [export](https://docs.docker.com/reference/commandline/cli/#export) commands.
