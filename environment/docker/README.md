@@ -1,20 +1,27 @@
-Docker Computational Environment Creation
-=========================================
+# Docker Compute Environment
 
-Installing Docker
------------------
+![Docker logo](http://www.docker.com/static/img/nav/docker-logo-loggedout.png)
 
-You must already have [docker](http://docker.io) installed. See http://docker.io for more information.
+In this hands-on exercise, we will learn how to create and use a reproducible
+computational enviroment with Docker.
 
-Build the Docker Images
------------------------
+## Installing Docker
+
+You must already have [Docker](http://docker.io) installed. See the [Docker
+installation documention](http://docs.docker.com/installation/#installation)
+for more information.
+
+In general this means having a properly configure kernel and the docker client
+and daemon installed on a Linux distribution. On Mac or Windows, the
+installation installation instructions will install a `boot2docker` utility to
+manage a VirtualBox virtual machine running the docker client and daemon.
+
+## Build the Docker Images
 
 We need to build the Docker images, our reproducible computational
-environments.  First, build the base image.
+environments.  First, build the base image:
 
-```bash
-docker build -t reproducible .
-```
+{{ d['build-and-run.sh|idio']['build-reproducible'] }}
 
 At the end of the build process, you should see output like this:
 
@@ -23,26 +30,20 @@ Successfully built 7b7bc4cbc144
 ```
 
 We can also build two other convenience images built on top of our
-*reproducible* image.
+*reproducible* image. These will be used to run just the `dexy` command
+or to start up the IPython notebook.
 
-```bash
-docker build -t reproducible/dexy - < ./Dockerfile-dexy
-docker build -t reproducible/ipython - < ./Dockerfile-ipython
-```
+{{ d['build-and-run.sh|idio']['build-convenience'] }}
 
 
-Running Docker
---------------
+## Running Docker
 
 To enter the *image* with your HOME directory mounted as a *volume*
 
-```bash
-docker run -v $HOME:/home/reproducible -i -t reproducible /bin/bash
-```
+{{ d['enter-environment.sh|idio']['enter'] }}
 
-You are now in a Docker *container*. The *-i -t* tells docker to
-start up a pseudo-terminal and keep stdin open. Enter *exit* to
-exit the shell.
+You are now in a Docker *container*. The *-i -t* flags tells docker to start
+up a pseudo-terminal and keep stdin open. Enter `exit` to exit the shell.
 
 To run dexy,
 

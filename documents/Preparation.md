@@ -10,7 +10,7 @@ This document describes the steps required to prepare for this tutorial.
 2. [Create a fork](https://help.github.com/articles/fork-a-repo) of [the tutorial repository](https://github.com/reproducible-research/scipy-tutorial-2014).
 3. [Clone the fork locally](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository) with the [SSH protocol](http://git-scm.com/book/en/Git-on-the-Server-The-Protocols#The-SSH-Protocol).
 
-## Sign up for a Figshare Account.
+## Sign up for a Figshare Account
 
 ![Figshare
 logo](https://www.digital-science.com/system/images/W1siZiIsIjIwMTIvMDUvMDkvMTcvNDIvMzEvNTU0L3Byb2R1Y3RfZmlnc2hhcmVfbGFyZ2UucG5nIl1d/product-figshare-small.png)
@@ -18,6 +18,8 @@ logo](https://www.digital-science.com/system/images/W1siZiIsIjIwMTIvMDUvMDkvMTcv
 [Sign up](https://figshare.com/account/register) for a free
 [Figshare](https://figshare.com) account.
 
-## Build your computational environment.
+## Build your Reproducible Computational Environment
 
-See the ComputationalEnvironment document for instructions on how to set up the computational environment.
+![Docker logo](https://www.dotcloud.com/static/img_2012/docker_logo.png)
+
+1. Follow the directions in the [Docker excercise document](../environment/docker/) to set up your reproducible computational environment.

@@ -3,13 +3,18 @@ website:
   - assets
 
 render-documents:
-  - README.md|resub|markdown|jinja:
+  - "*README.md|resub|jinja|markdown":
     - output-name: "index.html"
     - resub: { expressions: [["\\.md", ".html"]] }
-  - documents/README.md|markdown|jinja:
-    - output-name: "index.html"
-  - documents/*.md|markdown|jinja:
+    - environment/docker/build-and-run.sh|idio
+    - environment/docker/enter-environment.sh|idio
+  - documents/*.md|resub|markdown|jinja:
     - except: "README"
+    - resub: { expressions: [["\\.md", ".html"]] }
 
 assets:
   - .css
+  - website/pygments.css|pyg:
+    - contents: " "
+    - pyg: { ext : .css }
+    - output: True
