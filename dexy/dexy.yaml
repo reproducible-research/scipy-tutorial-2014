@@ -1,6 +1,11 @@
-processing.md|jinja|markdown|easyhtml:
+replicateOrPerish.tex|jinja|latex:
     # syntax highlight all .py files
-    - .py|idio
+    - .py|idio|pycon|pyg|l:
     # run this .py file through the interpreter, capturing stdout and adding any new files
-    - process-images.py|py:
+    - ../notebooks/checkipnb.py|py:
+        - data/reproducibleData.json
         - py: { add-new-files: True }
+        - py: { scriptargs: '../notebooks/00-ReproducibleResearch.ipynb' }
+    - _*.tex:
+        - output: False
+
