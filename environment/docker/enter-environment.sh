@@ -1,4 +1,4 @@
 #!/bin/sh
 
 ### "enter"
-docker run -v $HOME:/home/reproducible -i -t reproducible /bin/bash
+docker run -i -t reproducible /bin/bash
