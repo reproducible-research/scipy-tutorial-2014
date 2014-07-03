@@ -1,13 +1,8 @@
 replicateOrPerish.tex|jinja|latex:
-    # syntax highlight all .py files
-    - .py|idio|pycon|pyg|l:
     - .json
-    # run this .py file through the interpreter, capturing stdout and adding any new files
-    - ../notebooks/checkipnb.py|py:
-        - reproducibleData.json
-        - TralitusSaltrator.jpg
-        - SegmentedEyeOverlay.png
-        - py: { scriptargs: '../notebooks/00-ReproducibleResearch.ipynb', add-new-files: True, output-extensions: ['.json','.png','.jpg'] }
+    - reproducibleData.json:
+        - ../notebooks/checkipnb.py|py:
+            - py: { scriptargs: '../notebooks/00-ReproducibleResearch.ipynb', add-new-files: True, output-extensions: ['.json','.png','.jpg'] }
     - _*.tex:
         - output: False
 
