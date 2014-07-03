@@ -32,4 +32,4 @@ Python](http://scipy.org) and [Git](http://git-scm.org).
 The tutorial will cover four hours, but *preparation is required*.
 
 * [Required preparation](documents/Preparation.md)
-* [Agenda](documents/Agenda.md)
+* [Agenda](documents/)
