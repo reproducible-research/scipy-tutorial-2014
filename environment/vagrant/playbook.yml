@@ -31,6 +31,15 @@
     apt: name=libpng-dev state=present
     sudo: yes
 
+  - name: install pandoc
+    apt: name=pandoc state=present
+    sudo: yes
+
+  - name: install latex
+    apt: name=texlive-latex-base state=present
+    apt: name=texlive-latex-extra state=present
+    sudo: yes
+
   - name: install gfortran
     apt: name=gfortran state=present
     sudo: yes

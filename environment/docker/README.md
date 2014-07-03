@@ -1,9 +1,9 @@
 # Docker Compute Environment
 
-![Docker logo](http://www.docker.com/static/img/nav/docker-logo-loggedout.png)
+![Docker logo](https://pbs.twimg.com/profile_images/378800000124779041/fbbb494a7eef5f9278c6967b6072ca3e_400x400.png)
 
 In this hands-on exercise, we will learn how to create and use a reproducible
-computational enviroment with Docker.
+computational environment with Docker.
 
 [TOC]
 
@@ -19,6 +19,7 @@ installation installation instructions will install a `boot2docker` utility to
 manage a VirtualBox virtual machine running the docker client and daemon.
 
 ## Build the Docker Images
+
 
 We need to build the Docker *images*, our reproducible computational
 environments. Docker images are built from a set of instructions, the
@@ -52,17 +53,14 @@ up a pseudo-terminal and keep stdin open. Enter `exit` to exit the shell.
 
 To run dexy,
 
-```bash
-cd ../../../scipy-tutorial-2014/dexy
-docker run -v $PWD:/home/reproducible reproducible/dexy
-```
+{{ d['build-and-run.sh|idio']['run-dexy'] }}
+
+In this case, we mount the local directory as a *volume* in the notebook so we
+can process our local data with the computational environment.
 
 To start the IPython notebook,
 
-```bash
-cd ../../scipy-tutorial-2014/notebooks
-docker run -d -P -v $PWD:/home/reproducible --name ipython reproducible/ipython
-```
+{{ d['build-and-run.sh|idio']['start-ipython'] }}
 
 This runs the Docker *container* in the background, makes the ports listening
 available on the host, mounts the current working directory, and gives the
@@ -71,27 +69,28 @@ container the name *ipython*.
 To get information on the containers running and the ports available from a
 given container,
 
-```bash
-docker ps
-docker port ipython 8888
+{{ d['build-and-run.sh|idio']['ipython-ps'] }}
+
+If this returns *0.0.0.0:49153*, we will use the *49155* port.  On Linux, point
+your browser to [http://localhost:49153](http://localhost:49153). On Mac on
+Windows, use `boot2docker` to find the correct IP address,
+
+```
+boot2docker ip
 ```
 
-If this returns *0.0.0.0:49155*, for example, point your browser to
-http://localhost:49155.
+If this returns *192.168.59.103*, then point your browser to
+[http://192.168.59.103:49153](http://192.168.59.103:49153).
 
 To stop and remove the container,
-```bash
-docker stop
-docker rm
-```
+
+{{ d['build-and-run.sh|idio']['ipython-stop'] }}
 
 For a full list of docker commands or docker subcommand help, enter *docker*
-or *docker <subcommand>* with no arguments.
+or *docker subcommand* with no arguments.
 
-```bash
-docker
-docker start
-```
+{{ d['build-and-run.sh|idio']['docker-help'] }}
 
-It is also possible to share your Docker images on the web and archive them
-with the *push* and *export* commands.
+It is also possible to [share your Docker images](https://hub.docker.com/)
+with the [push](https://docs.docker.com/reference/commandline/cli/#push)
+and [export](://docs.docker.com/reference/commandline/cli/#export) commands.

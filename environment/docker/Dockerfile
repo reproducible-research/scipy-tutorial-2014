@@ -47,6 +47,11 @@ RUN apt-get install -y python-nose
 ### "dexy"
 RUN pip install dexy
 
+### "latex"
+RUN apt-get install -y pandoc
+RUN apt-get install -y --no-install-recommends texlive-latex-base
+RUN apt-get install -y --no-install-recommends texlive-latex-extra
+
 ### "itk"
 RUN easy_install SimpleITK
 
