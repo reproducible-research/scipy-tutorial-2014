@@ -12,7 +12,7 @@ cd ../../../scipy-tutorial-2014/dexy
 #docker run -v $PWD:/home/reproducible reproducible/dexy
 
 ### "start-ipython"
-cd ../../scipy-tutorial-2014/notebooks
+cd ../../../scipy-tutorial-2014/notebooks
 docker run -d -P -v $PWD:/home/reproducible --name ipython reproducible/ipython
 
 ### "ipython-ps"
