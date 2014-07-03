@@ -5,9 +5,19 @@
   </head>
   <body>
     <h1 id="docker-compute-environment">Docker Compute Environment</h1>
-<p><img alt="Docker logo" src="http://www.docker.com/static/img/nav/docker-logo-loggedout.png" /></p>
+<p><img alt="Docker logo" src="https://pbs.twimg.com/profile_images/378800000124779041/fbbb494a7eef5f9278c6967b6072ca3e_400x400.png" /></p>
 <p>In this hands-on exercise, we will learn how to create and use a reproducible
-computational enviroment with Docker.</p>
+computational environment with Docker.</p>
+<div class="toc">
+<ul>
+<li><a href="#docker-compute-environment">Docker Compute Environment</a><ul>
+<li><a href="#installing-docker">Installing Docker</a></li>
+<li><a href="#build-the-docker-images">Build the Docker Images</a></li>
+<li><a href="#running-docker">Running Docker</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <h2 id="installing-docker">Installing Docker</h2>
 <p>You must already have <a href="http://docker.io">Docker</a> installed. See the <a href="http://docs.docker.com/installation/#installation">Docker
 installation documention</a>
@@ -17,8 +27,11 @@ and daemon installed on a Linux distribution. On Mac or Windows, the
 installation installation instructions will install a <code>boot2docker</code> utility to
 manage a VirtualBox virtual machine running the docker client and daemon.</p>
 <h2 id="build-the-docker-images">Build the Docker Images</h2>
-<p>We need to build the Docker images, our reproducible computational
-environments.  First, build the base image:</p>
+<p>We need to build the Docker <em>images</em>, our reproducible computational
+environments. Docker images are built from a set of instructions, the
+<a href="http://docs.docker.com/reference/builder/">Dockerfile</a>.
+After changing to the current directory,
+<code>scipy-tutorial-2014/environement/docker</code>, build the base image:</p>
 <div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible .
 </pre></div>
 
@@ -32,40 +45,45 @@ or to start up the IPython notebook.</p>
 </pre></div>
 
 <h2 id="running-docker">Running Docker</h2>
-<p>To enter the <em>image</em> with your HOME directory mounted as a <em>volume</em></p>
-<div class="highlight"><pre><a name="environment--docker--enter-environment.sh-idio.html-1"></a>docker run -v <span class="nv">$HOME</span>:/home/reproducible -i -t reproducible /bin/bash
+<p>To enter the <em>image</em>,</p>
+<div class="highlight"><pre><a name="environment--docker--enter-environment.sh-idio.html-1"></a>docker run -i -t reproducible /bin/bash
 </pre></div>
 
 <p>You are now in a Docker <em>container</em>. The <em>-i -t</em> flags tells docker to start
 up a pseudo-terminal and keep stdin open. Enter <code>exit</code> to exit the shell.</p>
-<p>To run dexy,</p>
-<p><code>bash
-cd ../../../scipy-tutorial-2014/dexy
-docker run -v $PWD:/home/reproducible reproducible/dexy</code></p>
 <p>To start the IPython notebook,</p>
-<p><code>bash
-cd ../../scipy-tutorial-2014/notebooks
-docker run -d -P -v $PWD:/home/reproducible --name ipython reproducible/ipython</code></p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a><span class="nb">cd</span> ../../scipy-tutorial-2014/notebooks
+<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker run -d -P -v <span class="nv">$PWD</span>:/home/reproducible --name ipython reproducible/ipython
+</pre></div>
+
 <p>This runs the Docker <em>container</em> in the background, makes the ports listening
 available on the host, mounts the current working directory, and gives the
 container the name <em>ipython</em>.</p>
 <p>To get information on the containers running and the ports available from a
 given container,</p>
-<p><code>bash
-docker ps
-docker port ipython 8888</code></p>
-<p>If this returns <em>0.0.0.0:49155</em>, for example, point your browser to
-http://localhost:49155.</p>
-<p>To stop and remove the container,
-<code>bash
-docker stop
-docker rm</code></p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker ps
+<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker port ipython 8888
+</pre></div>
+
+<p>If this returns <em>0.0.0.0:49153</em>, we will use the <em>49155</em> port.  On Linux, point
+your browser to <a href="http://localhost:49153">http://localhost:49153</a>. On Mac on
+Windows, use <code>boot2docker</code> to find the correct IP address,</p>
+<p><code>boot2docker ip</code></p>
+<p>If this returns <em>192.168.59.103</em>, then point your browser to
+<a href="http://192.168.59.103:49153">http://192.168.59.103:49153</a>.</p>
+<p>To stop and remove the container,</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker stop ipython
+<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker rm ipython
+</pre></div>
+
 <p>For a full list of docker commands or docker subcommand help, enter <em>docker</em>
-or <em>docker <subcommand></em> with no arguments.</p>
-<p><code>bash
-docker
-docker start</code></p>
-<p>It is also possible to share your Docker images on the web and archive them
-with the <em>push</em> and <em>export</em> commands.</p>
+or <em>docker subcommand</em> with no arguments.</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker
+<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker start
+</pre></div>
+
+<p>It is also possible to <a href="https://hub.docker.com/">share your Docker images</a>
+with the <a href="https://docs.docker.com/reference/commandline/cli/#push">push</a>
+and <a href="://docs.docker.com/reference/commandline/cli/#export">export</a> commands.</p>
   </body>
 </html>
