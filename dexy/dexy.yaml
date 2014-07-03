@@ -1,8 +1,5 @@
-replicateOrPerish.tex|jinja|latex:
-    - .json
-    - reproducibleData.json:
-        - ../notebooks/checkipnb.py|py:
-            - py: { scriptargs: '../notebooks/00-ReproducibleResearch.ipynb', add-new-files: True, output-extensions: ['.json','.png','.jpg'] }
-    - _*.tex:
-        - output: False
+.tex|jinja|latex:
+    - .py|idio|l
+    - .py|py:
+        - py: { add-new-files: True, additional-doc-settings: { output: False }}
 
