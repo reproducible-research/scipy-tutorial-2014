@@ -1,43 +1,25 @@
 # Agenda
 
-* 8:00 am  First Session
-  * Introduction
-  * Data Acquisition
-  * Data Sharing
-* 9:00 am  Second Session
-  * Data Processing
-  * Revision Control
-  * IPython Notebook - SimpleITK
-* 10:00 am Break
-* 10:15 am Third Session
-  * Testing
-  * Modern Scientific Publishing
-  * Dexy
-* 11:00 am Fourth Session
-  * Insight Journal
-  * Replication
+[TOC]
 
-## First Session
+## 8:00 am First Session
 
 ### Getting Started
 
-Getting started slide with time-consuming tasks (5 min)
-
-Verify the [Preparation.md](Preparation.md)
-
-* Clone repo
-* Create venv
-* Start IPython Notebook locally
+* Say *Hi!* to the instructors
+* Introduce yourself to the person sitting next to you, they will be your
+  partner
+* Make sure you successfully completed the [preparation](Preparation.md) tasks
 
 ### Introduction
 
 Introduction (10min) - Luis
 
 * History of scientific societies and publications
-  * http://54.225.78.7/LearningEncounters/Reproducible-Research-Part-I/#/
-  * Leeuwenhoek was the Man !
-  * The Invisible College
-  * Nullius in Verba
+    * http://54.225.78.7/LearningEncounters/Reproducible-Research-Part-I/#/
+    * Leeuwenhoek was the Man !
+    * The Invisible College
+    * Nullius in Verba
 
 ### Data Acquisition.
 
@@ -65,7 +47,7 @@ Data Sharing (30min)
   * Hands on: Download the data via HTTP
 
 
-## Second Session
+## 9:00 am Second Session
 
 ### Local Data Processing
 
@@ -103,11 +85,9 @@ Python SimpleITK scripts (20min) Matt
   * Run scripts on new data
   * Generate histogram for the data
 
+## 10:00 am Break (15min)
 
-
-## Break (15min)
-
-## Third Session
+## 10:15 am Third Session
 
 ### Testing
 
@@ -130,7 +110,7 @@ Literate Programming - Dexy (30min) Ana
   *  Run dexy to generate a PDF document
 
 
-## Fourth Session
+## 11:15 am Fourth Session
 
 ### Insight Journal
 
