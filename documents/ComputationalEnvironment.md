@@ -22,3 +22,8 @@ TODO: VM / VM-setup description
 ## Package managers and distributions
 
 TODO: package manager and distribution description
+
+## Exercise
+
+1. [Create your own reproducible computational environment](../environment/).
+2. Upload your Docker image to [DockerHub](https://hub.docker.com).
