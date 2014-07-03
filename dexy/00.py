@@ -3,8 +3,6 @@ import SimpleITK as sitk
 import json
 import sys
 
-sys.path.append('./src')
-
 import eyesize
 import imagedownloader
 

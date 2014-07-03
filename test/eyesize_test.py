@@ -1,3 +1,7 @@
+import sys
+
+sys.path.append('../dexy')
+
 import eyesize
 import imagedownloader
 import SimpleITK as sitk
