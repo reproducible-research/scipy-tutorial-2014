@@ -36,7 +36,7 @@ After changing to the current directory,
 </pre></div>
 
 <p>At the end of the build process, you should see output like this:</p>
-<p><code>Successfully built 7b7bc4cbc144</code></p>
+<p><code>Successfully built 0bce0a1b0cf0</code></p>
 <p>We can also build two other convenience images built on top of our
 <em>reproducible</em> image. These will be used to run just the <code>dexy</code> command
 or to start up the IPython notebook.</p>
@@ -44,6 +44,9 @@ or to start up the IPython notebook.</p>
 <a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker build -t reproducible/ipython - &lt; ./Dockerfile-ipython
 </pre></div>
 
+<p>At the end of the build processes, you should set output like these:</p>
+<p><code>Successfully built e396018d878e</code></p>
+<p><code>Successfully built a276b59c9c8d</code></p>
 <h2 id="running-docker">Running Docker</h2>
 <p>To enter the <em>image</em>,</p>
 <div class="highlight"><pre><a name="environment--docker--enter-environment.sh-idio.html-1"></a>docker run -i -t reproducible /bin/bash
@@ -52,7 +55,7 @@ or to start up the IPython notebook.</p>
 <p>You are now in a Docker <em>container</em>. The <em>-i -t</em> flags tells docker to start
 up a pseudo-terminal and keep stdin open. Enter <code>exit</code> to exit the shell.</p>
 <p>To start the IPython notebook,</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a><span class="nb">cd</span> ../../scipy-tutorial-2014/notebooks
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a><span class="nb">cd</span> ../../../scipy-tutorial-2014/notebooks
 <a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker run -d -P -v <span class="nv">$PWD</span>:/home/reproducible --name ipython reproducible/ipython
 </pre></div>
 
@@ -65,7 +68,7 @@ given container,</p>
 <a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker port ipython 8888
 </pre></div>
 
-<p>If this returns <em>0.0.0.0:49153</em>, we will use the <em>49155</em> port.  On Linux, point
+<p>If this returns <em>0.0.0.0:49153</em>, we will use the <em>49153</em> port.  On Linux, point
 your browser to <a href="http://localhost:49153">http://localhost:49153</a>. On Mac on
 Windows, use <code>boot2docker</code> to find the correct IP address,</p>
 <p><code>boot2docker ip</code></p>
@@ -84,6 +87,11 @@ or <em>docker subcommand</em> with no arguments.</p>
 
 <p>It is also possible to <a href="https://hub.docker.com/">share your Docker images</a>
 with the <a href="https://docs.docker.com/reference/commandline/cli/#push">push</a>
-and <a href="://docs.docker.com/reference/commandline/cli/#export">export</a> commands.</p>
+and <a href="https://docs.docker.com/reference/commandline/cli/#export">export</a> commands.</p>
+    <hr />
+    <ul>
+    <li><a href="../">Computational Environment Setup</a></li>
+    <li><a href="../../">Tutorial Home</a></li>
+    </ul>
   </body>
 </html>

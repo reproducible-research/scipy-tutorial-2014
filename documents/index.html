@@ -3,18 +3,151 @@
     <link rel="stylesheet" type="text/css" href="../website/style.css">
   </head>
   <body>
-    <h1 id="introduction">Introduction</h1>
-<p>This directory contains the documents providing instructions for reproducible
-research warriors to go through the training process.</p>
-<p>Please read the documents in the following order</p>
+    <h1 id="agenda">Agenda</h1>
+<div class="toc">
 <ul>
-<li><a href="Agenda.html">Agenda.html</a></li>
-<li><a href="Preparation.html">Preparation.html</a></li>
-<li><a href="DataAcquisition.html">DataAcquisition.html</a></li>
-<li><a href="DataSharing.html">DataSharing.html</a></li>
-<li><a href="DataProcessing.html">DataProcessing.html</a></li>
-<li><a href="ComputationalEnvironment.html">ComputationalEnvironment.html</a></li>
-<li><a href="Workflow.html">Workflow.html</a></li>
+<li><a href="#agenda">Agenda</a><ul>
+<li><a href="#800-am-first-session">8:00 am First Session</a><ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#data-acquisition">Data Acquisition.</a></li>
+<li><a href="#data-sharing">Data Sharing</a></li>
 </ul>
+</li>
+<li><a href="#900-am-second-session">9:00 am Second Session</a><ul>
+<li><a href="#local-data-processing">Local Data Processing</a></li>
+<li><a href="#revision-control">Revision Control</a></li>
+<li><a href="#ipython-notebooks-and-simpleitk">IPython Notebooks and SimpleITK</a></li>
+</ul>
+</li>
+<li><a href="#1000-am-break-15min">10:00 am Break (15min)</a></li>
+<li><a href="#1015-am-third-session">10:15 am Third Session</a><ul>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#modern-scientific-publishing">Modern Scientific Publishing</a></li>
+</ul>
+</li>
+<li><a href="#1115-am-fourth-session">11:15 am Fourth Session</a><ul>
+<li><a href="#insight-journal">Insight Journal</a></li>
+<li><a href="#replicate-or-perish">Replicate or Perish !</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="800-am-first-session">8:00 am First Session</h2>
+<h3 id="getting-started">Getting Started</h3>
+<ul>
+<li>Say <em>Hi!</em> to the instructors</li>
+<li>Introduce yourself to the person sitting next to you, they will be your
+  partner</li>
+<li>Make sure you successfully completed the <a href="Preparation.html">preparation</a> tasks</li>
+</ul>
+<h3 id="introduction">Introduction</h3>
+<p>Introduction (10min) - Luis</p>
+<ul>
+<li>History of scientific societies and publications<ul>
+<li>http://54.225.78.7/LearningEncounters/Reproducible-Research-Part-I/#/</li>
+<li>Leeuwenhoek was the Man !</li>
+<li>The Invisible College</li>
+<li>Nullius in Verba</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-acquisition">Data Acquisition.</h3>
+<p>Replication of the early microscope experiments by Antonie Leeuwenhoek</p>
+<ul>
+<li>Data collection - Image Acquisition (15 min) Matt and Luis</li>
+<li><a href="DataAcquisition.html">DataAcquisition.html</a></li>
+<li>Hands on: Cell camera phone microscope</li>
+<li>With drop of water</li>
+<li>Hands on: Each pair acquires images</li>
+</ul>
+<h3 id="data-sharing">Data Sharing</h3>
+<p>Data Sharing (30min)</p>
+<ul>
+<li><a href="DataSharing.html">DataSharing.html</a></li>
+<li>Image gathering, storage, and sharing (15min) - Luis</li>
+<li>Figshare (www.figshare.com)</li>
+<li>MIDAS (www.midasplatform.com)</li>
+<li>Girder (http://girder.readthedocs.org/en/latest)</li>
+<li>Hands on: Upload the images</li>
+<li>Hands on: Download data via RESTful API (15min)</li>
+<li>Provenance and</li>
+<li>Python scripts</li>
+<li>Hands on: Download the data via HTTP</li>
+</ul>
+<h2 id="900-am-second-session">9:00 am Second Session</h2>
+<h3 id="local-data-processing">Local Data Processing</h3>
+<p>Computational Environment (20min) - Aashish</p>
+<ul>
+<li><a href="ComputationalEnvironment.html">ComputationalEnvironment.html</a></li>
+<li>Package versioning</li>
+<li>Virtual Machines</li>
+<li>Docker</li>
+<li>Cloud services</li>
+<li>Hands on:</li>
+<li>Create a Docker image and container</li>
+<li>Run our tutorial package verification script</li>
+</ul>
+<h3 id="revision-control">Revision Control</h3>
+<p>Revision Control with Git (20min) - Steve</p>
+<ul>
+<li>Keeping track of changes</li>
+<li>Unique hashes</li>
+<li>DOI</li>
+<li>Hands on:</li>
+<li>Create a branch</li>
+<li>Make a commit</li>
+<li>Push the branch</li>
+<li>Create a citable version: https://guides.github.com/activities/citable-code/</li>
+</ul>
+<h3 id="ipython-notebooks-and-simpleitk">IPython Notebooks and SimpleITK</h3>
+<p>Python SimpleITK scripts (20min) Matt</p>
+<ul>
+<li><a href="DataProcessing.html">DataProcessing.html</a></li>
+<li>Data analysis, particle counting.</li>
+<li>Hands on:</li>
+<li>Run scripts on new data</li>
+<li>Generate histogram for the data</li>
+</ul>
+<h2 id="1000-am-break-15min">10:00 am Break (15min)</h2>
+<h2 id="1015-am-third-session">10:15 am Third Session</h2>
+<h3 id="testing">Testing</h3>
+<p>Testing (30min)  Jc</p>
+<ul>
+<li>Unit testing with known data</li>
+<li>Regression testing with known data</li>
+<li>Hands on:</li>
+<li>Run tests</li>
+<li>Add coverage for another method to the unit tests</li>
+</ul>
+<h3 id="modern-scientific-publishing">Modern Scientific Publishing</h3>
+<p>Literate Programming - Dexy (30min) Ana</p>
+<ul>
+<li>Article generation</li>
+<li>RST to HTML, etc</li>
+<li>GitHub replication and sharing</li>
+<li>Hands on:</li>
+<li>Run dexy to generate a PDF document</li>
+</ul>
+<h2 id="1115-am-fourth-session">11:15 am Fourth Session</h2>
+<h3 id="insight-journal">Insight Journal</h3>
+<p>Submitting an article to a Reproducible Journal (20 min)</p>
+<ul>
+<li>Submit Article to the Insight Journal</li>
+<li>Point to github fork, for source code</li>
+</ul>
+<h3 id="replicate-or-perish">Replicate or Perish !</h3>
+<p>Attempt to replicate articles (40 min)</p>
+<ul>
+<li>Group assignment</li>
+<li>Replication attempt</li>
+<li>Sharing observations</li>
+</ul>
+    <hr />
+    <ul>
+    <li><a href="../../documents">Tutorial Agenda</a></li>
+    </ul>
   </body>
 </html>
