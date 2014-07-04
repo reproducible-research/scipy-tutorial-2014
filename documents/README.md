@@ -13,23 +13,21 @@
 
 ### Introduction
 
-10 min - Luis
-
-* History of scientific societies and publications
+* History of scientific societies and publications (10 min) - Luis
     * [Reproducible Research](http://reproducible-research.github.io/Reproducible-Research-Part-I/)
     * [Leeuwenhoek](http://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek) was The Man!
     * [The Invisible College](http://en.wikipedia.org/wiki/Invisible_College)
     * [Nullius in Verba](https://royalsociety.org/about-us/history/)
 
-### Data Acquisition.
+### Data Acquisition
 
 Replication of the early microscope experiments by Antonie Leeuwenhoek
 
-* Data collection - Image Acquisition (15 min) Matt and Luis
-  * [DataAcquisition.md](DataAcquisition.md)
-  * Hands on: Cell camera phone microscope
-  * With drop of water
-  * Hands on: Each pair acquires images
+* Data collection - Image Acquisition (15 min) - Matt and Luis
+    * [DataAcquisition](DataAcquisition.md)
+    * Cell camera phone microscope
+    * With drop of interesting water
+    * Hands on: Each pair acquires images
 
 ### Data Sharing
 
