@@ -8,7 +8,8 @@ We will honor the method devised by Antonie Leeuwenhoek in the 1600s. It is
 said that Leeuwenhoek performed some his earlier microscopy observations by
 using a drop of water as a powerful spherical lense.
 
-This is decribed in more detail in this blog: [http://www.kitware.com/blog/home/post/253]
+This is decribed in more detail [in this
+blog](http://www.kitware.com/blog/home/post/253).
 
 A drop of water typically will have a radius of about one or two millimeters,
 resulting in a large magnification power.
@@ -58,43 +59,45 @@ Use a mobile device
 
 [![Water Drop](http://img.youtube.com/vi/mURPEFv9uyg/0.jpg)](http://www.youtube.com/watch?v=mURPEFv9uyg)
 
-* Place the device on a flat surface.
-* Immerse your finger in the glass of water as to draw a drop of water.
-* Place the drop of water on top of the camera.
-  * Make sure to place the water well centered on the camera.
-  * Make the drop as small as possible, yet cover the sensor.
+1. Place the device on a flat surface.
+2. Immerse your finger in the glass of water as to draw a drop of water.
+3. Place the drop of water on top of the camera.
+    * Make sure to place the water well centered on the camera.
+    * Make the drop as small as possible, yet cover the sensor.
 
 #### The Object
 
 [![Finger Focus](http://img.youtube.com/vi/kbRBKXDPqTM/0.jpg)](http://www.youtube.com/watch?v=kbRBKXDPqTM)
 
-* Hold a small object or the tip of your finger in front of the water drop, without touching the drop.
-* Monitor the image of the object in the screen of the mobile device.
-* Once you get the object in focus, press the acquisition button.
-  * Note that the object might only be in focus at the center of the image, this is a normal aberration for spherical lenses.
-* Repeat until you master the process
-* Note that some devices may allow you to use a timer to acquire an image.
-  * For example, give a delay of three seconds between the time you press the button and the time the image is taken.
-  * This may help to hold the sample at the right location for it to be in focus.
-* Note that you could either acquire a still image or a video sequence.
+1. Hold a small object or the tip of your finger in front of the water drop, without touching the drop.
+2. Monitor the image of the object in the screen of the mobile device.
+3. Once you get the object in focus, press the acquisition button.
+    * Note that the object might only be in focus at the center of the image, this is a normal aberration for spherical lenses.
+4. Repeat until you master the process
+5. Note that some devices may allow you to use a timer to acquire an image.
+    * For example, give a delay of three seconds between the time you press the button and the time the image is taken.
+    * This may help to hold the sample at the right location for it to be in focus.
+6. Note that you could either acquire a still image or a video sequence.
 
 #### The Microscopy Samples
 
 [![Cover Slide Position](http://img.youtube.com/vi/1dX6jiezYuY/0.jpg)](http://www.youtube.com/watch?v=1dX6jiezYuY)
 
-* Take the microscopy samples distributed by instructors.
-  * It typically will contain some microscopic organisms floating in a solution.
-* Put a drop of the sample in a glass cover slide.
-* Place the glass slide just above the water drop lens.
-* Adjust the position until you see the sample in focus.
-* Acquire the image.
-  * Blocking any direct light with your hand may improve the illumination of the sample.
+1. Take the microscopy samples distributed by instructors.
+    * It typically will contain some microscopic organisms floating in a solution.
+2. Put a drop of the sample in a glass cover slide.
+3. Place the glass slide just above the water drop lens.
+4. Adjust the position until you see the sample in focus.
+5. Acquire the image.
+    * Blocking any direct light with your hand may improve the illumination of the sample.
 
 ## Examples
 
 Examples of data acquisition can be seen at
 
-* [http://www.kitware.com/blog/home/post/253]
+[![http://www.kitware.com/blog/home/post/253](http://www.kitware.com/blog/files/6_927312512.JPG)
+http://www.kitware.com/blog/home/post/253](http://www.kitware.com/blog/home/post/253)
+
 * [http://dx.doi.org/10.6084/m9.figshare.1051751]
 * [http://dx.doi.org/10.6084/m9.figshare.1058904]
 * [http://dx.doi.org/10.6084/m9.figshare.1058902]
