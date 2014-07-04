@@ -9,17 +9,17 @@
 * Say *Hi!* to the instructors
 * Introduce yourself to the person sitting next to you, they will be your
   partner
-* Make sure you successfully completed the [preparation](Preparation.md) tasks
+* Recall successfully completing the [preparation](Preparation.md) tasks
 
 ### Introduction
 
-Introduction (10min) - Luis
+10 min - Luis
 
 * History of scientific societies and publications
-    * http://54.225.78.7/LearningEncounters/Reproducible-Research-Part-I/#/
-    * Leeuwenhoek was the Man !
-    * The Invisible College
-    * Nullius in Verba
+    * [Reproducible Research](http://reproducible-research.github.io/Reproducible-Research-Part-I/)
+    * [Leeuwenhoek](http://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek) was The Man!
+    * [The Invisible College](http://en.wikipedia.org/wiki/Invisible_College)
+    * [Nullius in Verba](https://royalsociety.org/about-us/history/)
 
 ### Data Acquisition.
 
