@@ -26,8 +26,7 @@ Replication of the early microscope experiments by Antonie Leeuwenhoek
 * Data collection - Image Acquisition (15 min) - Matt and Luis
     * Cell camera phone microscope
     * With drop of interesting water
-    * Hands on: Each pair acquires images
-    * [Data Acquisition](DataAcquisition.md)
+    * Hands on: [Each pair acquires images](DataAcquisition.md)
 
 ### Data Sharing
 
