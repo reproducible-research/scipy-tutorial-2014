@@ -2,14 +2,16 @@
 
 [TOC]
 
+
 ## 8:00 am First Session
 
 ### Getting Started
 
-* Say *Hi!* to the instructors
-* Introduce yourself to the person sitting next to you, they will be your
+* Get acquainted and verify preparations (5 min) - Matt
+    * Say *Hi!* to the instructors
+    * Introduce yourself to the person sitting next to you, they will be your
   partner
-* Recall successfully completing the [preparation](Preparation.md) tasks
+    * Recall successfully completing the [preparation](Preparation.md) tasks
 
 ### Introduction
 
@@ -21,100 +23,110 @@
 
 ### Data Acquisition
 
-Replication of the early microscope experiments by Antonie Leeuwenhoek
+* [Image Acquisition](DataAcquisition.md) (25 min) - Matt
 
-* Data collection - Image Acquisition (15 min) - Matt and Luis
+* Replication of the early microscope experiments by Antonie Leeuwenhoek
     * Cell camera phone microscope
     * With drop of interesting water
-    * Hands on: [Each pair acquires images](DataAcquisition.md)
+    * *Hands on:* each pair acquires images
 
 ### Data Sharing
 
-Data Sharing (30min)
+[Data Sharing](DataSharing.md) - (20 min) - Luis
 
-* [DataSharing.md](DataSharing.md)
-* Image gathering, storage, and sharing (15min) - Luis
-  * Figshare (www.figshare.com)
-  * MIDAS (www.midasplatform.com)
-  * Girder (http://girder.readthedocs.org/en/latest)
-  * Hands on: Upload the images
-* Hands on: Download data via RESTful API (15min)
-  * Provenance and
-  * Python scripts
-  * Hands on: Download the data via HTTP
+* Image gathering, storage, and sharing (10 min)
+    * Figshare (www.figshare.com)
+    * MIDAS (www.midasplatform.com)
+    * Girder (http://girder.readthedocs.org/en/latest)
+    * *Hands on:* Upload the images
+* Download data via RESTful API (10 min)
+    * REST download via Python standard library
+    * Checksum verification
+    * *Hands on:* Download the data via HTTP
 
 
 ## 9:00 am Second Session
 
-### Local Data Processing
+### Reproducible Computational Environment
 
-Computational Environment (20min) - Aashish
+[Computational Environment](ComputationalEnvironment.md) (20min) - Aashish
 
-* [ComputationalEnvironment.md](ComputationalEnvironment.md)
-* Package versioning
-* Virtual Machines
-* Docker
-* Cloud services
-* Hands on:
-  * Create a Docker image and container
-  * Run our tutorial package verification script
+* Reproducible computational environment
+    * Docker
+    * Package versioning
+    * Virtual Machines
+    * Cloud services
+* *Hands on:*
+    * Create a Docker image and container
+    * Run our tutorial package verification script
+    * Upload your Docker image to DockerHub
 
 ### Revision Control
 
 Revision Control with Git (20min) - Steve
 
-* Keeping track of changes
-* Unique hashes
-* DOI
-* Hands on:
-  * Create a branch
-  * Make a commit
-  * Push the branch
-  * Create a citable version: https://guides.github.com/activities/citable-code/
+* Software versioning, collaboration, and citation
+    * Keeping track of changes
+    * Unique hashes
+    * DOI
+* *Hands on:*
+    * Create a branch
+    * Make a commit
+    * Push the branch
+    * [Create a citable version](https://guides.github.com/activities/citable-code/)
 
-### IPython Notebooks and SimpleITK
+### Developing Reproducible Scripts and Code
 
-Python SimpleITK scripts (20min) Matt
+[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20min) - Matt
 
-* [DataProcessing.md](DataProcessing.md)
-* Data analysis, particle counting.
-* Hands on:
-  * Run scripts on new data
-  * Generate histogram for the data
+* Reproducible code development
+    * IPython Notebook to combine notes, code, and results
+    * Avoid duplication with re-usable modules
+* *Hands on:*
+    * Run analysis on new data
+    * Generate histogram for the data
+
 
 ## 10:00 am Break (15min)
 
+
 ## 10:15 am Third Session
 
-### Testing
+### Regression Testing
 
-Testing (30min)  Jc
+Regression Testing (30min) - Jc
 
-* Unit testing with known data
-* Regression testing with known data
-* Hands on:
-  * Run tests
-  * Add coverage for another method to the unit tests
+* Quality code development with regression tests
+    * Testing code hypothesis: the scientific method applied to development
+    * Unit testing
+    * Integration test
+    * Continuous integration dashboards
+* *Hands on:*
+    * Run the test suite
+    * Add coverage for another method to the unit tests
 
-### Modern Scientific Publishing
+### Literate Programming
 
-Literate Programming - Dexy (30min) Ana
+Literate Programming with Dexy (30min) - Ana
 
 * Article generation
 * RST to HTML, etc
 * GitHub replication and sharing
-* Hands on:
-  *  Run dexy to generate a PDF document
+* *Hands on:* run dexy to generate a PDF document
 
 
 ## 11:15 am Fourth Session
 
-### Insight Journal
+### Open Science Publication
 
-Submitting an article to a Reproducible Journal (20 min)
+Submitting an article to a Reproducible Journal (20 min) - Luis
 
-* Submit Article to the Insight Journal
-* Point to github fork, for source code
+* Open Science Publication
+    * Open Access
+    * Publishes article, data, and code
+* *Hands on:*
+    * Submit Article to the Insight Journal
+    * Point to github fork, for source code
 
 ### Replicate or Perish !
 
