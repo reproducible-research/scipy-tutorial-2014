@@ -10,6 +10,8 @@ render-documents:
     - environment/docker/enter-environment.sh|idio
     - environment/docker/Dockerfile:
       - output: True
+    - environment/check_env.py:
+      - output: True
   - documents/*.md|resub|markdown|jinja:
     - except: "README"
     - resub: { expressions: [["\\.md", ".html"]] }
