@@ -19,8 +19,9 @@ convert-readme:
     - code
 
 documents:
-  - documents/*.md|markdown|jinja:
+  - documents/*.md|resub|markdown|jinja:
       - run-docker
+      - resub: { expressions: [["\\.md", ".html"]] }
       - code
 
 assets:
