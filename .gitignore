@@ -65,3 +65,4 @@ environment/vagrant/vagrant_ansible_inventory_default
 
 # Files generated when running from docker.
 *.ipython
+*.ipynb_checkpoints
