@@ -6,13 +6,15 @@ website:
 code:
     - .sh|idio
     - .py|idio
-    - "*/Dockerfile|idio":
+    - "*/Dockerfile*|idio":
         - idio: { lexer: bash } # someone pls write a Dockerfile lexer for pygments
+    - environment/docker/help.sh|idio|shint|pyg
 
 convert-readme:
-  - "README.md|resub|jinja|markdown":
+  - "*README.md|resub|jinja|markdown":
     - output-name: "index.html"
     - resub: { expressions: [["\\.md", ".html"]] }
+    - code
 
 documents:
   - documents/*.md|markdown|jinja:
