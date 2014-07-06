@@ -59,10 +59,10 @@ RUN easy_install SimpleITK
 RUN apt-get install -y mplayer
 
 ### "create-user"
-RUN useradd -m reproducible
-RUN adduser reproducible sudo
+RUN useradd -m repro
+RUN adduser repro sudo
 
 ### "activate-user"
-ENV HOME /home/reproducible
-USER reproducible
-WORKDIR /home/reproducible
+ENV HOME /home/repro
+USER repro
+WORKDIR /home/repro

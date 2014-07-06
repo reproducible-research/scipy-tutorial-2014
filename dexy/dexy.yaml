@@ -1,5 +1,6 @@
 .tex|jinja|latex:
     - .py|idio|l
     - .py|py:
+        - .py
         - py: { add-new-files: True, additional-doc-settings: { output: False }}
 

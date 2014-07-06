@@ -1,5 +1,5 @@
 # Runs the command "dexy"
-FROM       reproducible
+FROM       reproducible/base
 MAINTAINER Ana Nelson <ana@ananelson.com>
 
-CMD dexy
+CMD dexy setup && dexy
