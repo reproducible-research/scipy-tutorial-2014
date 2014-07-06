@@ -16,8 +16,14 @@ run virtually anywhere.
 TODO: Docker description
 
 ## VM's
+As the name suggests, the VM (Virtual Machine) emulates a physical machine as such computers. In the last few years, VM has become very popular because of their scalability, ease of maintenance, and reproducibility. 
 
-TODO: VM / VM-setup description
+Vagrant is a software to define and control virtual machine environemnt. These machines are generally able to work   together or are somehow associated with each other. Here are some use-cases people are using multi-machine environments for today:  
+
+- Accurately modeling a multi-server production topology, such as separating a web and database server.  
+- Modeling a distributed system and how they interact with each other.  
+- Testing an interface, such as an API to a service component.  
+Disaster-case testing: machines dying, network partitions, slow networks, inconsistent world views, etc.  
 
 ## Package managers and distributions
 
