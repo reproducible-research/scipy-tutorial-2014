@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+  </head>
+  <body>
+  <a href="/">
+      <img src="http://www.sciencephoto.com/images/download_wm_image.html/H412408-Anton_van_Leeuwenhoek,_caricature-SPL.jpg" width="100px" />
+  </a>
+  <br />
+    <h1 id="vagrant-computational-environment-creation">Vagrant Computational Environment Creation</h1>
+<p><a href="https://www.virtualbox.org">VirtualBox</a>, <a href="http://www.vagrantup.com">Vagrant</a> &gt;= 1.1,
+and <a href="http://www.ansible.com/">Ansible</a> are required. Follow the steps below:</p>
+<h2 id="installation">Installation</h2>
+<h3 id="linux-ubuntu">Linux / Ubuntu</h3>
+<p><code>sudo apt-get install vagrant
+sudo apt-get install ansible</code></p>
+<h3 id="macos-and-windows">MacOS and Windows</h3>
+<p>Install vagrant from <a href="http://www.vagrantup.com/downloads.html">here</a></p>
+<h2 id="generation">Generation</h2>
+<p>Once installed, open a new console and change directory to
+scipy-tutorial-2014/environment/vagrant.</p>
+<p><code>cd scipy-tutorial-2014/environment/vagrant
+vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
+vagrant up</code></p>
+<p>To connect to the machine:</p>
+<p><code>vagrant ssh</code></p>
+<p>To shutdown the virtual machine:</p>
+<p><code>vagrant halt</code></p>
+  </body>
+</html>
