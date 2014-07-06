@@ -15,19 +15,19 @@
 </ul>
 </li>
 <li><a href="#900-am-second-session">9:00 am Second Session</a><ul>
-<li><a href="#local-data-processing">Local Data Processing</a></li>
+<li><a href="#reproducible-computational-environment">Reproducible Computational Environment</a></li>
 <li><a href="#revision-control">Revision Control</a></li>
-<li><a href="#ipython-notebooks-and-simpleitk">IPython Notebooks and SimpleITK</a></li>
+<li><a href="#developing-reproducible-scripts-and-code">Developing Reproducible Scripts and Code</a></li>
 </ul>
 </li>
 <li><a href="#1000-am-break-15min">10:00 am Break (15min)</a></li>
 <li><a href="#1015-am-third-session">10:15 am Third Session</a><ul>
-<li><a href="#testing">Testing</a></li>
-<li><a href="#modern-scientific-publishing">Modern Scientific Publishing</a></li>
+<li><a href="#regression-testing">Regression Testing</a></li>
+<li><a href="#literate-programming">Literate Programming</a></li>
 </ul>
 </li>
 <li><a href="#1115-am-fourth-session">11:15 am Fourth Session</a><ul>
-<li><a href="#insight-journal">Insight Journal</a></li>
+<li><a href="#open-science-publication">Open Science Publication</a></li>
 <li><a href="#replicate-or-perish">Replicate or Perish !</a></li>
 </ul>
 </li>
@@ -38,10 +38,13 @@
 <h2 id="800-am-first-session">8:00 am First Session</h2>
 <h3 id="getting-started">Getting Started</h3>
 <ul>
+<li>Get acquainted and verify preparations (5 min) - Matt<ul>
 <li>Say <em>Hi!</em> to the instructors</li>
 <li>Introduce yourself to the person sitting next to you, they will be your
   partner</li>
 <li>Recall successfully completing the <a href="Preparation.html">preparation</a> tasks</li>
+</ul>
+</li>
 </ul>
 <h3 id="introduction">Introduction</h3>
 <ul>
@@ -54,89 +57,125 @@
 </li>
 </ul>
 <h3 id="data-acquisition">Data Acquisition</h3>
+<ul>
+<li>
+<p><a href="DataAcquisition.html">Image Acquisition</a> (25 min) - Matt</p>
+</li>
+<li>
 <p>Replication of the early microscope experiments by Antonie Leeuwenhoek</p>
 <ul>
-<li>Data collection - Image Acquisition (15 min) - Matt and Luis<ul>
 <li>Cell camera phone microscope</li>
 <li>With drop of interesting water</li>
-<li>Hands on: <a href="DataAcquisition.html">Each pair acquires images</a></li>
+<li><em>Hands on:</em> each pair acquires images</li>
 </ul>
 </li>
 </ul>
 <h3 id="data-sharing">Data Sharing</h3>
-<p>Data Sharing (30min)</p>
+<p><a href="DataSharing.html">Data Sharing</a> - (20 min) - Luis</p>
 <ul>
-<li><a href="DataSharing.html">DataSharing.html</a></li>
-<li>Image gathering, storage, and sharing (15min) - Luis</li>
+<li>Image gathering, storage, and sharing (10 min)<ul>
 <li>Figshare (www.figshare.com)</li>
 <li>MIDAS (www.midasplatform.com)</li>
 <li>Girder (http://girder.readthedocs.org/en/latest)</li>
-<li>Hands on: Upload the images</li>
-<li>Hands on: Download data via RESTful API (15min)</li>
-<li>Provenance and</li>
-<li>Python scripts</li>
-<li>Hands on: Download the data via HTTP</li>
+<li><em>Hands on:</em> Upload the images</li>
+</ul>
+</li>
+<li>Download data via RESTful API (10 min)<ul>
+<li>REST download via Python standard library</li>
+<li>Checksum verification</li>
+<li><em>Hands on:</em> Download the data via HTTP</li>
+</ul>
+</li>
 </ul>
 <h2 id="900-am-second-session">9:00 am Second Session</h2>
-<h3 id="local-data-processing">Local Data Processing</h3>
-<p>Computational Environment (20min) - Aashish</p>
+<h3 id="reproducible-computational-environment">Reproducible Computational Environment</h3>
+<p><a href="ComputationalEnvironment.html">Computational Environment</a> (20min) - Aashish</p>
 <ul>
-<li><a href="ComputationalEnvironment.html">ComputationalEnvironment.html</a></li>
+<li>Reproducible computational environment<ul>
+<li>Docker</li>
 <li>Package versioning</li>
 <li>Virtual Machines</li>
-<li>Docker</li>
 <li>Cloud services</li>
-<li>Hands on:</li>
+</ul>
+</li>
+<li><em>Hands on:</em><ul>
 <li>Create a Docker image and container</li>
 <li>Run our tutorial package verification script</li>
+<li>Upload your Docker image to DockerHub</li>
+</ul>
+</li>
 </ul>
 <h3 id="revision-control">Revision Control</h3>
 <p>Revision Control with Git (20min) - Steve</p>
 <ul>
+<li>Software versioning, collaboration, and citation<ul>
 <li>Keeping track of changes</li>
 <li>Unique hashes</li>
 <li>DOI</li>
-<li>Hands on:</li>
+</ul>
+</li>
+<li><em>Hands on:</em><ul>
 <li>Create a branch</li>
 <li>Make a commit</li>
 <li>Push the branch</li>
-<li>Create a citable version: https://guides.github.com/activities/citable-code/</li>
+<li><a href="https://guides.github.com/activities/citable-code/">Create a citable version</a></li>
 </ul>
-<h3 id="ipython-notebooks-and-simpleitk">IPython Notebooks and SimpleITK</h3>
-<p>Python SimpleITK scripts (20min) Matt</p>
+</li>
+</ul>
+<h3 id="developing-reproducible-scripts-and-code">Developing Reproducible Scripts and Code</h3>
+<p><a href="DataProcessing.html">IPython Notebook, Scripts, and SimpleITK</a> (20min) - Matt</p>
 <ul>
-<li><a href="DataProcessing.html">DataProcessing.html</a></li>
-<li>Data analysis, particle counting.</li>
-<li>Hands on:</li>
-<li>Run scripts on new data</li>
+<li>Reproducible code development<ul>
+<li>IPython Notebook to combine notes, code, and results</li>
+<li>Avoid duplication with re-usable modules</li>
+</ul>
+</li>
+<li><em>Hands on:</em><ul>
+<li>Run analysis on new data</li>
 <li>Generate histogram for the data</li>
+</ul>
+</li>
 </ul>
 <h2 id="1000-am-break-15min">10:00 am Break (15min)</h2>
 <h2 id="1015-am-third-session">10:15 am Third Session</h2>
-<h3 id="testing">Testing</h3>
-<p>Testing (30min)  Jc</p>
+<h3 id="regression-testing">Regression Testing</h3>
+<p>Regression Testing (30min) - Jc</p>
 <ul>
-<li>Unit testing with known data</li>
-<li>Regression testing with known data</li>
-<li>Hands on:</li>
-<li>Run tests</li>
+<li>Quality code development with regression tests<ul>
+<li>Testing code hypothesis: the scientific method applied to development</li>
+<li>Unit testing</li>
+<li>Integration test</li>
+<li>Continuous integration dashboards</li>
+</ul>
+</li>
+<li><em>Hands on:</em><ul>
+<li>Run the test suite</li>
 <li>Add coverage for another method to the unit tests</li>
 </ul>
-<h3 id="modern-scientific-publishing">Modern Scientific Publishing</h3>
-<p>Literate Programming - Dexy (30min) Ana</p>
+</li>
+</ul>
+<h3 id="literate-programming">Literate Programming</h3>
+<p>Literate Programming with Dexy (30min) - Ana</p>
 <ul>
 <li>Article generation</li>
 <li>RST to HTML, etc</li>
 <li>GitHub replication and sharing</li>
-<li>Hands on:</li>
-<li>Run dexy to generate a PDF document</li>
+<li><em>Hands on:</em> run dexy to generate a PDF document</li>
 </ul>
 <h2 id="1115-am-fourth-session">11:15 am Fourth Session</h2>
-<h3 id="insight-journal">Insight Journal</h3>
-<p>Submitting an article to a Reproducible Journal (20 min)</p>
+<h3 id="open-science-publication">Open Science Publication</h3>
+<p>Submitting an article to a Reproducible Journal (20 min) - Luis</p>
 <ul>
+<li>Open Science Publication<ul>
+<li>Open Access</li>
+<li>Publishes article, data, and code</li>
+</ul>
+</li>
+<li><em>Hands on:</em><ul>
 <li>Submit Article to the Insight Journal</li>
 <li>Point to github fork, for source code</li>
+</ul>
+</li>
 </ul>
 <h3 id="replicate-or-perish">Replicate or Perish !</h3>
 <p>Attempt to replicate articles (40 min)</p>
