@@ -39,8 +39,6 @@
 
 * Image gathering, storage, and sharing (10 min)
     * Figshare (www.figshare.com)
-    * MIDAS (www.midasplatform.com)
-    * Girder (http://girder.readthedocs.org/en/latest)
     * *Hands on:* Upload the images
 * Download data via RESTful API (10 min)
     * REST download via Python standard library
