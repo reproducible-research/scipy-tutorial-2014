@@ -49,7 +49,7 @@ Now that you have brought the images to a hard disk, you can upload them to both
 
 ### Figshare
 
-* Login in your Figshare account [http://figshare.com/account/my_data]
+* Login to your [Figshare account](http://figshare.com/account/my_data)
 * Create a new project, titled: Reproducible Research Training
 * Upload images to this project
 * For a given image take note of its identifier:

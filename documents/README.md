@@ -12,18 +12,21 @@
     * Introduce yourself to the person sitting next to you, they will be your
   partner
     * Recall successfully completing the [preparation](Preparation.md) tasks
+    * Interact with other participants throughout the tutorial on [the
+      MoPad](https://scipy2014.etherpad.mozilla.org/13)
 
 ### Introduction
 
-* History of scientific societies and publications (10 min) - Luis
-    * [Reproducible Research](http://reproducible-research.github.io/Reproducible-Research-Part-I/)
+[History and Motivation for Reproducible Research](http://reproducible-research.github.io/Reproducible-Research-Part-I/) (10 min) - Luis
+
+* History of scientific societies and publications
     * [Leeuwenhoek](http://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek) was The Man!
     * [The Invisible College](http://en.wikipedia.org/wiki/Invisible_College)
     * [Nullius in Verba](https://royalsociety.org/about-us/history/)
 
 ### Data Acquisition
 
-* [Image Acquisition](DataAcquisition.md) (25 min) - Matt
+[Image Acquisition](DataAcquisition.md) (25 min) - Matt
 
 * Replication of the early microscope experiments by Antonie Leeuwenhoek
     * Cell camera phone microscope
@@ -49,7 +52,7 @@
 
 ### Reproducible Computational Environment
 
-[Computational Environment](ComputationalEnvironment.md) (20min) - Aashish
+[Computational Environment](ComputationalEnvironment.md) (20 min) - Aashish
 
 * Reproducible computational environment
     * Docker
@@ -63,7 +66,7 @@
 
 ### Revision Control
 
-Revision Control with Git (20min) - Steve
+Revision Control with Git and GitHub (20 min) - Steve
 
 * Software versioning, collaboration, and citation
     * Keeping track of changes
@@ -75,9 +78,9 @@ Revision Control with Git (20min) - Steve
     * Push the branch
     * [Create a citable version](https://guides.github.com/activities/citable-code/)
 
-### Developing Reproducible Scripts and Code
+### Developing Reproducible Scripts and Modules
 
-[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20min) - Matt
+[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20 min) - Matt
 
 * Reproducible code development
     * IPython Notebook to combine notes, code, and results
@@ -87,19 +90,19 @@ Revision Control with Git (20min) - Steve
     * Generate histogram for the data
 
 
-## 10:00 am Break (15min)
+## 10:00 am Break (15 min)
 
 
 ## 10:15 am Third Session
 
 ### Regression Testing
 
-Regression Testing (30min) - Jc
+Regression Testing (30 min) - Jc
 
 * Quality code development with regression tests
     * Testing code hypothesis: the scientific method applied to development
     * Unit testing
-    * Integration test
+    * Integration testing
     * Continuous integration dashboards
 * *Hands on:*
     * Run the test suite
@@ -107,7 +110,7 @@ Regression Testing (30min) - Jc
 
 ### Literate Programming
 
-Literate Programming with Dexy (30min) - Ana
+Literate Programming with Dexy (30 min) - Ana
 
 * Article generation
 * RST to HTML, etc
@@ -126,13 +129,11 @@ Submitting an article to a Reproducible Journal (20 min) - Luis
     * Publishes article, data, and code
 * *Hands on:*
     * Submit Article to the Insight Journal
-    * Point to github fork, for source code
+    * Point to GitHub fork for source code
 
 ### Replicate or Perish !
 
-Attempt to replicate articles (40 min)
+Attempt to replicate your peers' articles (40 min)
 
-* Group assignment
-* Replication attempt
-* Sharing observations
-
+* Replicate the publications of groups next to you
+* Share your observations
