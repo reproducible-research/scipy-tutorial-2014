@@ -11,7 +11,7 @@ code:
     - environment/docker/help.sh|idio|shint|pyg
 
 convert-readme:
-  - "*/README.md|resub|jinja|markdown":
+  - "*README.md|resub|jinja|markdown":
     - output-name: "index.html"
     - resub: { expressions: [["\\.md", ".html"]] }
     - code
