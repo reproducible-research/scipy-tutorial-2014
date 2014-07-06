@@ -123,7 +123,9 @@ that other data sharing sites are also available.
   * http://api.figshare.com/v1/articles/1050595
   * This will return a JSON structure such as
 
+<pre><code>
     {"count": 1, "items": [{"article_id": 1050595, "title": "Image 002", "figshare_url": "http://figshare.com/articles/Image_002/1050595", "views": 1, "downloads": 0, "shares": 0, "doi": "http://dx.doi.org/10.6084/m9.figshare.1050595", "publisher_doi": "", "publisher_citation": "", "master_publisher_id": 0, "defined_type": "figure", "status": "Public", "version": 1, "published_date": "23:09, Jun 14, 2014", "description": "<p>Image of Tardigrade acquired with a cell phone water drop microscope</p>", "description_nohtml": "Image of Tardigrade acquired with a cell phone water drop microscope", "total_size": "85.10 KB", "owner": {"id": 97454, "full_name": "Luis Ibanez"}, "authors": [{"first_name": "Luis", "last_name": "Ibanez", "id": 97454, "full_name": "Luis Ibanez"}], "tags": [{"id": 247678, "name": "diy microscopy"}, {"id": 98329, "name": "tardigrades"}], "categories": [{"id": 12, "name": "Cell Biology"}, {"id": 8, "name": "Microbiology"}], "files": [{"thumb": "http://previews.figshare.com/1526484/250_1526484.jpg", "download_url": "http://files.figshare.com/1526484/IMG_20140331_131717.jpeg", "name": "IMG_20140331_131717.jpeg", "id": 1526484, "mime_type": "image/jpeg", "size": "87 KB"}], "links": []}]}
+</pre></code>
 
 * Look for the "download_url" tag.
 * Now we can refer to to actual file by using the "download_url" as
