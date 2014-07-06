@@ -1,6 +1,13 @@
 # Data Processing
 
 Now that we have data in online sharing sites, we can start processing it. 
+When processing, we want to keep the following best practices in mind:
+
+* Avoid duplication of code: maximize re-use
+* Data, code, and documentation are coupled
+* Keep track of the full state with version identifiers
+* Make sure all analysis is tested
+
 
 ## IPython Notebook
 
