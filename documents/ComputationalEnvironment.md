@@ -13,7 +13,8 @@ run virtually anywhere.
 
 ![Docker stack](http://tiewei.github.io/images/docker-filesystems-multilayer.png)
 
-TODO: Docker description
+For more information on Docker please visit this page here (http://www.docker.com/whatisdocker)   
+
 
 ## VM's
 As the name suggests, the VM (Virtual Machine) emulates a physical machine as such computers. In the last few years, VM has become very popular because of their scalability, ease of maintenance, and reproducibility. 
@@ -24,6 +25,8 @@ Vagrant is a software to define and control virtual machine environemnt. These m
 - Modeling a distributed system and how they interact with each other.  
 - Testing an interface, such as an API to a service component.  
 Disaster-case testing: machines dying, network partitions, slow networks, inconsistent world views, etc.  
+
+Many software packages provides virtualization on modern computer architecture such as VMWare, Virtual Box, Parallels etc. You will find many online blogs on comparison betweek Docker and VM (For eg. http://www.pcworld.com/article/2095460/docker-challenges-virtualization-market-with-containers.html)   . 
 
 ## Package managers and distributions
 
