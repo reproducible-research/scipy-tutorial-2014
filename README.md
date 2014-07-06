@@ -1,7 +1,5 @@
 # Reproducible Research: Walking the Walk
 
-![Anton van Leeuwenhoek](http://www.sciencephoto.com/images/download_wm_image.html/H412408-Anton_van_Leeuwenhoek,_caricature-SPL.jpg)
-
 Tutorial on reproducible research at [SciPy 2014](https://conference.scipy.org/scipy2014/).
 
 

@@ -15,8 +15,8 @@ generate_website() {
 	  dexy setup
 	  dexy || exit 1
   else
-	  docker run --rm -v $PWD:/home/reproducible reproducible/dexy dexy setup
-	  docker run --rm -v $PWD:/home/reproducible reproducible/dexy dexy
+	  docker run --rm -v $PWD:/home/repro reproducible/dexy dexy setup
+	  docker run --rm -v $PWD:/home/repro reproducible/dexy dexy
 	  test $? || exit 1
   fi
   echo "Generating website... [ok]"
