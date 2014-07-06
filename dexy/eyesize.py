@@ -38,3 +38,11 @@ class EyeSize(object):
 
       return eyes_segmented,radius_estimate
 
+
+### "overlay"
+def overlay_segmentation(rgb_image, segmentation_image):
+    """Overlay the segmentation image in on a grayscale version
+     of the RGB image."""
+    magnitude_image = sitk.VectorMagnitude(rgb_image)
+    image_overlay = sitk.LabelOverlay(magnitude_image, segmentation_image)
+    return image_overlay
