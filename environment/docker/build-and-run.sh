@@ -9,7 +9,7 @@ docker build -t reproducible/ipython - < ./Dockerfile-ipython
 
 ### "run-dexy"
 cd ../../../scipy-tutorial-2014/dexy
-#docker run -v $PWD:/home/reproducible reproducible/dexy
+#docker run --rm -v $PWD:/home/reproducible reproducible/dexy
 
 ### "start-ipython"
 cd ../../../scipy-tutorial-2014/notebooks
