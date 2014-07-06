@@ -1,24 +1,27 @@
 website:
-  - render-documents
+  - documents
+  - convert-readme
   - assets
 
-render-documents:
-  - "*README.md|resub|jinja|markdown":
+code:
+    - .sh|idio
+    - .py|idio
+    - "*/Dockerfile|idio":
+        - idio: { lexer: bash } # someone pls write a Dockerfile lexer for pygments
+
+convert-readme:
+  - "README.md|resub|jinja|markdown":
     - output-name: "index.html"
     - resub: { expressions: [["\\.md", ".html"]] }
-    - environment/docker/build-and-run.sh|idio
-    - environment/docker/enter-environment.sh|idio
-    - environment/docker/Dockerfile:
-      - output: True
-    - environment/check_env.py:
-      - output: True
-  - documents/*.md|resub|markdown|jinja:
-    - except: "README"
-    - resub: { expressions: [["\\.md", ".html"]] }
+
+documents:
+  - documents/*.md|markdown|jinja:
+      - run-docker
+      - code
 
 assets:
   - .css
-  - website/pygments.css|pyg:
+  - assets/pygments.css|pyg:
     - contents: " "
     - pyg: { ext : .css }
     - output: True
