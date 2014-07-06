@@ -98,9 +98,12 @@ Examples of data acquisition can be seen at
 [![http://www.kitware.com/blog/home/post/253](http://www.kitware.com/blog/files/6_927312512.JPG)
 http://www.kitware.com/blog/home/post/253](http://www.kitware.com/blog/home/post/253)
 
-* [http://dx.doi.org/10.6084/m9.figshare.1051751]
-* [http://dx.doi.org/10.6084/m9.figshare.1058904]
-* [http://dx.doi.org/10.6084/m9.figshare.1058902]
-* [http://midas3.kitware.com/midas/folder/11394]
-* [https://twitter.com/luisibanez/status/476475327074410496/photo/1]
+[![http://files.figshare.com/1526481/IMG_20140331_131737.jpeg](http://files.figshare.com/1526481/IMG_20140331_131737.jpeg =200x)
+http://dx.doi.org/10.6084/m9.figshare.1051751](http://dx.doi.org/10.6084/m9.figshare.1051751)
 
+[![http://files.figshare.com/1535892/IMG_20140613_141431.jpg](http://files.figshare.com/1535892/IMG_20140613_141431.jpg =200x)
+http://dx.doi.org/10.6084/m9.figshare.1058904](http://dx.doi.org/10.6084/m9.figshare.1058904)
+
+[http://dx.doi.org/10.6084/m9.figshare.1058902](http://dx.doi.org/10.6084/m9.figshare.1058902)
+
+[http://midas3.kitware.com/midas/folder/11394](http://midas3.kitware.com/midas/folder/11394)
