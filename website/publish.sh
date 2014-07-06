@@ -26,7 +26,7 @@ push_website(){
   rm ./README.md
   git add *
   git commit -m "Build on $(date) of $(cd $repo_dir; git rev-parse --short HEAD)."
-  #git push origin gh-pages:gh-pages
+  git push origin gh-pages:gh-pages
   echo "Pushing website... [ok]"
 }
 

@@ -9,6 +9,8 @@ code:
     - "*/Dockerfile*|idio":
         - idio: { lexer: bash } # someone pls write a Dockerfile lexer for pygments
     - environment/docker/help.sh|idio|shint|pyg
+    - environment/check_env.py:
+        - output: True
 
 convert-readme:
   - "*README.md|resub|jinja|markdown":
