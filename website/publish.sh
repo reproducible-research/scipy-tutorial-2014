@@ -6,23 +6,9 @@
 #
 # Run from the top of the repository
 
-running_in_docker() {
-  awk -F/ '$2 == "docker"' /proc/self/cgroup | read
-}
+my_dir="$(dirname "$0")"
 
-generate_website() {
-  echo
-  echo "Generating website..."
-  if test running_in_docker; then
-	  dexy setup
-	  dexy || exit 1
-  else
-	  docker run --rm -v $PWD:/home/reproducible reproducible/dexy dexy setup
-	  docker run --rm -v $PWD:/home/reproducible reproducible/dexy dexy
-	  test $? || exit 1
-  fi
-  echo "Generating website... [ok]"
-}
+"$my_dir/generate.sh"
 
 push_website(){
   echo
@@ -40,9 +26,8 @@ push_website(){
   rm ./README.md
   git add *
   git commit -m "Build on $(date) of $(cd $repo_dir; git rev-parse --short HEAD)."
-  git push origin gh-pages:gh-pages
+  #git push origin gh-pages:gh-pages
   echo "Pushing website... [ok]"
 }
 
-generate_website
 push_website
