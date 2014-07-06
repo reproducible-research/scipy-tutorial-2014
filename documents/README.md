@@ -64,6 +64,17 @@
     * Run our tutorial package verification script
     * Upload your Docker image to DockerHub
 
+### Developing Reproducible Scripts and Modules
+
+[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20 min) - Matt
+
+* Reproducible code development
+    * IPython Notebook to combine notes, code, and results
+    * Avoid duplication with re-usable modules
+* *Hands on:*
+    * Run analysis on new data
+    * Generate histogram for the data
+
 ### Revision Control
 
 Revision Control with Git and GitHub (20 min) - Steve
@@ -77,17 +88,6 @@ Revision Control with Git and GitHub (20 min) - Steve
     * Make a commit
     * Push the branch
     * [Create a citable version](https://guides.github.com/activities/citable-code/)
-
-### Developing Reproducible Scripts and Modules
-
-[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20 min) - Matt
-
-* Reproducible code development
-    * IPython Notebook to combine notes, code, and results
-    * Avoid duplication with re-usable modules
-* *Hands on:*
-    * Run analysis on new data
-    * Generate histogram for the data
 
 
 ## 10:00 am Break (15 min)

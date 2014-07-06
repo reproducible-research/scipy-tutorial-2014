@@ -1,6 +1,6 @@
 # Data Processing
 
-Now that we have data in online sharing sites, we can start processing it.
+Now that we have data in online sharing sites, we can start processing it. 
 
 ## IPython Notebook
 
