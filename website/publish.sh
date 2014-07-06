@@ -14,7 +14,8 @@ repo_dir=$PWD
 cd /tmp
 git clone $repo_dir 2> /dev/null
 cd $(basename $repo_dir)
-git checkout gh-pages
+git checkout gh-pages || git checkout -b gh-pages origin/gh-pages
+git pull
 git rm -rf *
 cp -r $repo_dir/output-site/* ./
 rm ./README.md
