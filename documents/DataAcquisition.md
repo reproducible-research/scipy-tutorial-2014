@@ -20,7 +20,7 @@ still keeping it well rounded. In this exercise we will place the water over a
 glass surface, therefore creating a half-spherical lense.
 
 
-## Acquisition
+## Hands On
 
 [![Acquisition Overview](http://img.youtube.com/vi/kvKDqg-jbX4/0.jpg)](http://www.youtube.com/watch?v=kvKDqg-jbX4)
 
@@ -55,7 +55,7 @@ Use a mobile device
 
 ### Acquisition
 
-#### The Water Drop
+#### Water Drop
 
 [![Water Drop](http://img.youtube.com/vi/mURPEFv9uyg/0.jpg)](http://www.youtube.com/watch?v=mURPEFv9uyg)
 
@@ -65,7 +65,7 @@ Use a mobile device
     * Make sure to place the water well centered on the camera.
     * Make the drop as small as possible, yet cover the sensor.
 
-#### The Object
+#### Object
 
 [![Finger Focus](http://img.youtube.com/vi/kbRBKXDPqTM/0.jpg)](http://www.youtube.com/watch?v=kbRBKXDPqTM)
 
@@ -79,7 +79,7 @@ Use a mobile device
     * This may help to hold the sample at the right location for it to be in focus.
 6. Note that you could either acquire a still image or a video sequence.
 
-#### The Microscopy Samples
+#### Microscopy Samples
 
 [![Cover Slide Position](http://img.youtube.com/vi/1dX6jiezYuY/0.jpg)](http://www.youtube.com/watch?v=1dX6jiezYuY)
 
@@ -95,13 +95,14 @@ Use a mobile device
 
 Examples of data acquisition can be seen at
 
-[![http://www.kitware.com/blog/home/post/253](http://www.kitware.com/blog/files/6_927312512.JPG)
+
+[<img src="http://www.kitware.com/blog/files/6_927312512.JPG" width="400"><br>
 http://www.kitware.com/blog/home/post/253](http://www.kitware.com/blog/home/post/253)
 
-[![http://files.figshare.com/1526481/IMG_20140331_131737.jpeg](http://files.figshare.com/1526481/IMG_20140331_131737.jpeg =200x)
+[<img src="http://files.figshare.com/1526481/IMG_20140331_131737.jpeg" width="400"><br>
 http://dx.doi.org/10.6084/m9.figshare.1051751](http://dx.doi.org/10.6084/m9.figshare.1051751)
 
-[![http://files.figshare.com/1535892/IMG_20140613_141431.jpg](http://files.figshare.com/1535892/IMG_20140613_141431.jpg =200x)
+[<img src="http://files.figshare.com/1535892/IMG_20140613_141431.jpg" width="400"><br>
 http://dx.doi.org/10.6084/m9.figshare.1058904](http://dx.doi.org/10.6084/m9.figshare.1058904)
 
 [http://dx.doi.org/10.6084/m9.figshare.1058902](http://dx.doi.org/10.6084/m9.figshare.1058902)
