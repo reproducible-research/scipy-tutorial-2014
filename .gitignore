@@ -53,7 +53,7 @@ coverage.xml
 docs/_build/
 
 # Dexy generated files
-dexy/output/
+notebooks/dexy/output/
 dexy/.dexy
 dexy/.trash
 .dexy
