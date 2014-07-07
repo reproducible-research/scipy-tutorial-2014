@@ -34,9 +34,13 @@ time a change is pushed on your GitHub repository.
 
 For example: [https://travis-ci.org/girder/girder](https://travis-ci.org/girder/girder)
 
+
 Then, the associated results could be published on a dashboard.
 
-For example: [http://my.cdash.org/index.php?project=girder](http://my.cdash.org/index.php?project=girder)
+For example:
+
+* [http://open.cdash.org/index.php?project=CPython](http://open.cdash.org/index.php?project=CPython)
+* [http://my.cdash.org/index.php?project=girder](http://my.cdash.org/index.php?project=girder)
 
 ## Hands On
 
