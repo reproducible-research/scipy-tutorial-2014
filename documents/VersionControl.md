@@ -62,7 +62,7 @@ Then, to get those changes back up into your fork on GitHub
 
 ### Resources
 
- * https://guides.github.com/introduction/flow/
- * https://github.com/jnunemaker/dotfiles/blob/master/bash/config
- * https://github.com/jnunemaker/dotfiles/blob/master/bash/git-completion
- * https://guides.github.com/activities/citable-code/
+ * [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/)
+ * [https://github.com/jnunemaker/dotfiles/blob/master/bash/config](https://github.com/jnunemaker/dotfiles/blob/master/bash/config)
+ * [https://github.com/jnunemaker/dotfiles/blob/master/bash/git-completion](https://github.com/jnunemaker/dotfiles/blob/master/bash/git-completion)
+ * [https://guides.github.com/activities/citable-code/](https://guides.github.com/activities/citable-code/)
