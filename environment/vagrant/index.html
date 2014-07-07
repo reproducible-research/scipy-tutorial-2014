@@ -13,19 +13,25 @@
 and <a href="http://www.ansible.com/">Ansible</a> are required. Follow the steps below:</p>
 <h2 id="installation">Installation</h2>
 <h3 id="linux-ubuntu">Linux / Ubuntu</h3>
-<p><code>sudo apt-get install vagrant
-sudo apt-get install ansible</code></p>
+<div class="highlight"><pre><a name="environment--vagrant--install-and-generate.sh-idio.html-1"></a>sudo apt-get install vagrant
+<a name="environment--vagrant--install-and-generate.sh-idio.html-2"></a>sudo apt-get install ansible
+</pre></div>
+
 <h3 id="macos-and-windows">MacOS and Windows</h3>
 <p>Install vagrant from <a href="http://www.vagrantup.com/downloads.html">here</a></p>
 <h2 id="generation">Generation</h2>
 <p>Once installed, open a new console and change directory to
 scipy-tutorial-2014/environment/vagrant.</p>
-<p><code>cd scipy-tutorial-2014/environment/vagrant
-vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
-vagrant up</code></p>
+<div class="highlight"><pre><a name="environment--vagrant--install-and-generate.sh-idio.html-1"></a><span class="nb">cd </span>scipy-tutorial-2014/environment/vagrant
+<a name="environment--vagrant--install-and-generate.sh-idio.html-2"></a>vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
+<a name="environment--vagrant--install-and-generate.sh-idio.html-3"></a>vagrant up
+</pre></div>
+
 <p>To connect to the machine:</p>
-<p><code>vagrant ssh</code></p>
+<pre><code>vagrant ssh
+</code></pre>
 <p>To shutdown the virtual machine:</p>
-<p><code>vagrant halt</code></p>
+<div class="highlight"><pre><a name="environment--vagrant--install-and-generate.sh-idio.html-1"></a>vagrant halt
+</pre></div>
   </body>
 </html>
