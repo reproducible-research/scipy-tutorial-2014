@@ -14,7 +14,7 @@ docker build -t reproducible/ipython - < ./Dockerfile-ipython
 docker run --rm -v $PWD/../../dexy:/home/repro reproducible/dexy
 
 ### "start-ipython"
-docker run -d -P -v $PWD/../../notebooks:/home/reproducible --name ipython reproducible/ipython
+docker run -d -P -v $PWD/../../notebooks:/home/repro --name ipython reproducible/ipython
 
 ### "ipython-ps"
 docker ps
