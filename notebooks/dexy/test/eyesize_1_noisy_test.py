@@ -1,12 +1,12 @@
 import sys
 
-sys.path.append('../dexy')
+sys.path.append('..')
 
 import eyesize
 import imagedownloader
 import SimpleITK as sitk
 
-def eye_test():
+def eyesize_noisy_test():
 
   downloader = imagedownloader.ImageDownloader()
   estimator = eyesize.EyeSize()
@@ -26,5 +26,6 @@ def eye_test():
 
   sitk.WriteImage(eyes_segmented,'SegmentedEye.png')
 
-  return radius_estimate == 8.5 
-
+  expected_value = 85
+  assert radius_estimate == expected_value, \
+    "Problem with estimating radius: current: %s, expected: %s" % (radius_estimate, expected_value)
