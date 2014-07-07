@@ -1,8 +1,12 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../website/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
   </head>
   <body>
+  <a href="/">
+      <img src="http://www.sciencephoto.com/images/download_wm_image.html/H412408-Anton_van_Leeuwenhoek,_caricature-SPL.jpg" width="100px" />
+  </a>
+  <br />
     <h1 id="data-sharing">Data Sharing</h1>
 <h2 id="introduction">Introduction</h2>
 <h3 id="data-items-as-papers">Data Items as Papers</h3>
@@ -112,22 +116,20 @@ that other data sharing sites are also available.</p>
 <li>Will have the identifier: 1050595</li>
 <li>Use the identifier in the following way to get the article metadata:</li>
 <li>http://api.figshare.com/v1/articles/1050595</li>
-<li>
-<p>This will return a JSON structure such as</p>
-<p>{"count": 1, "items": [{"article_id": 1050595, "title": "Image 002", "figshare_url": "http://figshare.com/articles/Image_002/1050595", "views": 1, "downloads": 0, "shares": 0, "doi": "http://dx.doi.org/10.6084/m9.figshare.1050595", "publisher_doi": "", "publisher_citation": "", "master_publisher_id": 0, "defined_type": "figure", "status": "Public", "version": 1, "published_date": "23:09, Jun 14, 2014", "description": "<p>Image of Tardigrade acquired with a cell phone water drop microscope</p>", "description_nohtml": "Image of Tardigrade acquired with a cell phone water drop microscope", "total_size": "85.10 KB", "owner": {"id": 97454, "full_name": "Luis Ibanez"}, "authors": [{"first_name": "Luis", "last_name": "Ibanez", "id": 97454, "full_name": "Luis Ibanez"}], "tags": [{"id": 247678, "name": "diy microscopy"}, {"id": 98329, "name": "tardigrades"}], "categories": [{"id": 12, "name": "Cell Biology"}, {"id": 8, "name": "Microbiology"}], "files": [{"thumb": "http://previews.figshare.com/1526484/250_1526484.jpg", "download_url": "http://files.figshare.com/1526484/IMG_20140331_131717.jpeg", "name": "IMG_20140331_131717.jpeg", "id": 1526484, "mime_type": "image/jpeg", "size": "87 KB"}], "links": []}]}</p>
-</li>
-<li>
-<p>Look for the "download_url" tag.</p>
-</li>
+<li>This will return a JSON structure such as</li>
+</ul>
+<pre><code>
+    {"count": 1, "items": [{"article_id": 1050595, "title": "Image 002", "figshare_url": "http://figshare.com/articles/Image_002/1050595", "views": 1, "downloads": 0, "shares": 0, "doi": "http://dx.doi.org/10.6084/m9.figshare.1050595", "publisher_doi": "", "publisher_citation": "", "master_publisher_id": 0, "defined_type": "figure", "status": "Public", "version": 1, "published_date": "23:09, Jun 14, 2014", "description": "<p>Image of Tardigrade acquired with a cell phone water drop microscope</p>", "description_nohtml": "Image of Tardigrade acquired with a cell phone water drop microscope", "total_size": "85.10 KB", "owner": {"id": 97454, "full_name": "Luis Ibanez"}, "authors": [{"first_name": "Luis", "last_name": "Ibanez", "id": 97454, "full_name": "Luis Ibanez"}], "tags": [{"id": 247678, "name": "diy microscopy"}, {"id": 98329, "name": "tardigrades"}], "categories": [{"id": 12, "name": "Cell Biology"}, {"id": 8, "name": "Microbiology"}], "files": [{"thumb": "http://previews.figshare.com/1526484/250_1526484.jpg", "download_url": "http://files.figshare.com/1526484/IMG_20140331_131717.jpeg", "name": "IMG_20140331_131717.jpeg", "id": 1526484, "mime_type": "image/jpeg", "size": "87 KB"}], "links": []}]}
+</pre>
+
+<p></code></p>
+<ul>
+<li>Look for the "download_url" tag.</li>
 <li>Now we can refer to to actual file by using the "download_url" as</li>
 <li>http://files.figshare.com/1526484/IMG_20140331_131717.jpeg</li>
 <li>Put the "download_url" of your image in a browser and verify that the image is downloaded</li>
 <li>Breath, Smile !</li>
 </ul>
 <p>More on the Figshare API at [http://api.figshare.com/docs/]</p>
-    <hr />
-    <ul>
-    <li><a href="../documents">Tutorial Agenda</a></li>
-    </ul>
   </body>
 </html>

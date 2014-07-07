@@ -1,44 +1,49 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../website/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
   </head>
   <body>
+  <a href="/">
+      <img src="http://www.sciencephoto.com/images/download_wm_image.html/H412408-Anton_van_Leeuwenhoek,_caricature-SPL.jpg" width="100px" />
+  </a>
+  <br />
     <h1 id="data-processing">Data Processing</h1>
 <p>Now that we have data in online sharing sites, we can start processing it. 
 When processing, we want to keep the following best practices in mind:</p>
 <ul>
 <li>Avoid duplication of code: maximize re-use</li>
-<li>Data, code, and documentation are coupled</li>
 <li>Keep track of the full state with version identifiers</li>
 <li>Make sure all analysis is tested</li>
+<li>Data, code, and documentation are coupled</li>
 </ul>
+<p>The latter three topics are covered in further detail in the upcoming
+sessions on revision control, regression testing, and literate programming.</p>
 <h2 id="ipython-notebook">IPython Notebook</h2>
+<p><a href="http://ipython.org/"><img alt="IPython Notebook" src="https://avatars1.githubusercontent.com/u/230453?s=140" /></a></p>
 <p>This is one of the best existing resources for reproducible research practices.</p>
 <ul>
 <li>Learn it !</li>
 <li>Love it !</li>
 </ul>
-<h2 id="our-notebooks">Our Notebooks</h2>
-<p>The running instances of Notebooks can be found here</p>
-<pre><code>            54.221.241.247:8888
+<p>When it becomes desireable to re-use code outside of the notebook, it is helpful
+to incrementally refactor by creating classes or functions. These classes or functions
+can be stored in python modules, and imported into the Notebook.</p>
+<p><img alt="No Copy Paste" src="http://www.madhavighare.com/wp-content/uploads/2010/09/Don_t-Copy-Paste-150x150.jpg" /></p>
+<p>There are few helpful functions for this type of rapid development. In Python 2,
+the <a href="">reload</a> built-in, and in Python 3,
+<a href="https://docs.python.org/3.0/library/imp.html#imp.reload">imp.reload</a> which
+forces the interpreter to reload modules whose cached version is used by <code>import</code>
+statements. Instead of manually calling these functions, there is also an
+<a href="http://ipython.org/ipython-doc/dev/config/extensions/autoreload.html">autoreload</a>
+IPython magic,</p>
+<pre><code>
+%load_ext autoreload
+%autoreload 2
 </code></pre>
-<h3 id="your-notebook">Your Notebook</h3>
-<ul>
-<li>Create a new notebook</li>
-<li>Rename it</li>
-<li>Save it</li>
-</ul>
-<h3 id="your-input-image">Your input Image</h3>
-<ul>
-<li>Change the URL of the input image.</li>
-<li>Point it to the download_url that you identified in Figshare.</li>
-<li>Run the first few processing cells until you get to display your image in the page</li>
-<li>Verify that it is the proper image</li>
-<li>Save the modified notebook</li>
-</ul>
-    <hr />
-    <ul>
-    <li><a href="../documents">Tutorial Agenda</a></li>
-    </ul>
+
+<h2 id="hands-on">Hands On</h2>
+<p>Run through the <em>03-DataProcessing.ipynb</em> notebook in the repository. At the end of the notebook,
+there is a simple exercise on code re-use. Explore analysis on your images or images of
+nearby groups. Save the updated notebook to disk.</p>
   </body>
 </html>

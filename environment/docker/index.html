@@ -1,9 +1,12 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../../website/style.css">
-    <link rel="stylesheet" type="text/css" href="../../website/pygments.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
   </head>
   <body>
+  <a href="/">
+      <img src="http://www.sciencephoto.com/images/download_wm_image.html/H412408-Anton_van_Leeuwenhoek,_caricature-SPL.jpg" width="100px" />
+  </a>
+  <br />
     <h1 id="docker-compute-environment">Docker Compute Environment</h1>
 <p><img alt="Docker logo" src="https://pbs.twimg.com/profile_images/378800000124779041/fbbb494a7eef5f9278c6967b6072ca3e_400x400.png" /></p>
 <p>In this hands-on exercise, we will learn how to create and use a reproducible
@@ -12,8 +15,14 @@ computational environment with Docker.</p>
 <ul>
 <li><a href="#docker-compute-environment">Docker Compute Environment</a><ul>
 <li><a href="#installing-docker">Installing Docker</a></li>
-<li><a href="#build-the-docker-images">Build the Docker Images</a></li>
+<li><a href="#build-the-docker-base-image">Build the Docker Base Image</a></li>
 <li><a href="#running-docker">Running Docker</a></li>
+<li><a href="#non-interactive-containers">Non-Interactive Containers</a><ul>
+<li><a href="#dexy-image">Dexy Image</a></li>
+<li><a href="#ipython-image">IPython Image</a></li>
+</ul>
+</li>
+<li><a href="#docker-help">Docker Help</a></li>
 </ul>
 </li>
 </ul>
@@ -26,42 +35,73 @@ for more information.</p>
 and daemon installed on a Linux distribution. On Mac or Windows, the
 installation installation instructions will install a <code>boot2docker</code> utility to
 manage a VirtualBox virtual machine running the docker client and daemon.</p>
-<h2 id="build-the-docker-images">Build the Docker Images</h2>
+<h2 id="build-the-docker-base-image">Build the Docker Base Image</h2>
 <p>We need to build the Docker <em>images</em>, our reproducible computational
 environments. Docker images are built from a set of instructions, the
-<a href="http://docs.docker.com/reference/builder/">Dockerfile</a>.
-After changing to the current directory,
-<code>scipy-tutorial-2014/environement/docker</code>, build the base image:</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible .
+<a href="http://docs.docker.com/reference/builder/">Dockerfile</a>.</p>
+<p>After changing to the current directory <code>scipy-tutorial-2014/environement/docker</code>,
+build the base image via:</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible/base .
 </pre></div>
 
-<p>At the end of the build process, you should see output like this:</p>
-<p><code>Successfully built 0bce0a1b0cf0</code></p>
-<p>We can also build two other convenience images built on top of our
-<em>reproducible</em> image. These will be used to run just the <code>dexy</code> command
-or to start up the IPython notebook.</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible/dexy - &lt; ./Dockerfile-dexy
-<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker build -t reproducible/ipython - &lt; ./Dockerfile-ipython
+<p>It's also possible to use the pregenerated Docker image from the Docker Hub, via:</p>
+<div class="highlight"><pre><a name="environment--docker--hub-docker-image.sh-idio.html-1"></a>docker run -t -i reproducible/scipy-tutorial-2014 /bin/bash
 </pre></div>
 
-<p>At the end of the build processes, you should set output like these:</p>
-<p><code>Successfully built e396018d878e</code></p>
-<p><code>Successfully built a276b59c9c8d</code></p>
 <h2 id="running-docker">Running Docker</h2>
-<p>To enter the <em>image</em>,</p>
-<div class="highlight"><pre><a name="environment--docker--enter-environment.sh-idio.html-1"></a>docker run -i -t reproducible /bin/bash
+<p>To launch the base image and open a shell:</p>
+<div class="highlight"><pre><a name="environment--docker--enter-environment.sh-idio.html-1"></a>docker run -i -t reproducible/base /bin/bash
 </pre></div>
 
 <p>You are now in a Docker <em>container</em>. The <em>-i -t</em> flags tells docker to start
 up a pseudo-terminal and keep stdin open. Enter <code>exit</code> to exit the shell.</p>
-<p>To start the IPython notebook,</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a><span class="nb">cd</span> ../../../scipy-tutorial-2014/notebooks
-<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker run -d -P -v <span class="nv">$PWD</span>:/home/reproducible --name ipython reproducible/ipython
-</pre></div>
-
 <p>This runs the Docker <em>container</em> in the background, makes the ports listening
 available on the host, mounts the current working directory, and gives the
 container the name <em>ipython</em>.</p>
+<h2 id="non-interactive-containers">Non-Interactive Containers</h2>
+<p>We can also configure containers to perform unattended tasks.</p>
+<h3 id="dexy-image">Dexy Image</h3>
+<p>We can build other images on top of <code>reproducible/base</code> to handle common tasks.</p>
+<p>The <code>Dockerfile-dexy</code> image is used to run the <code>dexy</code> command.</p>
+<p>Here's the Dockerfile:</p>
+<div class="highlight"><pre><a name="environment--docker--Dockerfile-dexy-idio.html-1"></a><span class="c"># Runs the command &quot;dexy&quot;</span>
+<a name="environment--docker--Dockerfile-dexy-idio.html-2"></a>FROM       reproducible/base
+<a name="environment--docker--Dockerfile-dexy-idio.html-3"></a>MAINTAINER Ana Nelson &lt;ana@ananelson.com&gt;
+<a name="environment--docker--Dockerfile-dexy-idio.html-4"></a>
+<a name="environment--docker--Dockerfile-dexy-idio.html-5"></a>CMD dexy setup <span class="o">&amp;&amp;</span> dexy
+</pre></div>
+
+<p>It's built via:</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible/dexy - &lt; ./Dockerfile-dexy
+</pre></div>
+
+<p>And run via:</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker run --rm -v <span class="nv">$PWD</span>/../../dexy:/home/repro reproducible/dexy
+</pre></div>
+
+<p>This mounts the <code>scipy-tutorial-2014/dexy</code> directory within the container and
+then runs dexy. The dexy-generated output files are present on your local file
+system after the container exits because of the volume mounting.</p>
+<h3 id="ipython-image">IPython Image</h3>
+<p>The <code>Dockerfile-ipython</code> image is used to launch the IPython notebook server.</p>
+<p>Here's the Dockerfile:</p>
+<div class="highlight"><pre><a name="environment--docker--Dockerfile-ipython-idio.html-1"></a><span class="c"># Runs the ipython notebook</span>
+<a name="environment--docker--Dockerfile-ipython-idio.html-2"></a>FROM       reproducible/base
+<a name="environment--docker--Dockerfile-ipython-idio.html-3"></a>MAINTAINER Ana Nelson &lt;ana@ananelson.com&gt;
+<a name="environment--docker--Dockerfile-ipython-idio.html-4"></a>
+<a name="environment--docker--Dockerfile-ipython-idio.html-5"></a>CMD ipython notebook --ip<span class="o">=</span>* --pylab<span class="o">=</span>inline --no-browser
+<a name="environment--docker--Dockerfile-ipython-idio.html-6"></a>EXPOSE 8888
+</pre></div>
+
+<p>It's built via:</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker build -t reproducible/ipython - &lt; ./Dockerfile-ipython
+</pre></div>
+
+<p>To launch a non-interactive container which will run the IPython notebook
+server and forward the port IPython is running on, do:</p>
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker run -d -P -v <span class="nv">$PWD</span>/../../notebooks:/home/reproducible --name ipython reproducible/ipython
+</pre></div>
+
 <p>To get information on the containers running and the ports available from a
 given container,</p>
 <div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker ps
@@ -74,24 +114,65 @@ Windows, use <code>boot2docker</code> to find the correct IP address,</p>
 <p><code>boot2docker ip</code></p>
 <p>If this returns <em>192.168.59.103</em>, then point your browser to
 <a href="http://192.168.59.103:49153">http://192.168.59.103:49153</a>.</p>
-<p>To stop and remove the container,</p>
+<p>To stop and remove the container:</p>
 <div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker stop ipython
 <a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker rm ipython
 </pre></div>
 
+<h2 id="docker-help">Docker Help</h2>
 <p>For a full list of docker commands or docker subcommand help, enter <em>docker</em>
 or <em>docker subcommand</em> with no arguments.</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker
-<a name="environment--docker--build-and-run.sh-idio.html-2"></a>docker start
+<div class="highlight"><pre><a name="environment--docker--help.sh-idio-shint-pyg.html-1"></a><span class="gp">$</span> docker <span class="nb">help</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-2"></a><span class="go">Usage: docker [OPTIONS] COMMAND [arg...]</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-3"></a><span class="go"> -H=[unix:///var/run/docker.sock]: tcp://host:port to bind/connect to or unix://path/to/socket to use</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-4"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-5"></a><span class="go">A self-sufficient runtime for linux containers.</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-6"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-7"></a><span class="go">Commands:</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-8"></a><span class="go">    attach    Attach to a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-9"></a><span class="go">    build     Build an image from a Dockerfile</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-10"></a><span class="go">    commit    Create a new image from a container&#39;s changes</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-11"></a><span class="go">    cp        Copy files/folders from the containers filesystem to the host path</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-12"></a><span class="go">    diff      Inspect changes on a container&#39;s filesystem</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-13"></a><span class="go">    events    Get real time events from the server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-14"></a><span class="go">    export    Stream the contents of a container as a tar archive</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-15"></a><span class="go">    history   Show the history of an image</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-16"></a><span class="go">    images    List images</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-17"></a><span class="go">    import    Create a new filesystem image from the contents of a tarball</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-18"></a><span class="go">    info      Display system-wide information</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-19"></a><span class="go">    inspect   Return low-level information on a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-20"></a><span class="go">    kill      Kill a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-21"></a><span class="go">    load      Load an image from a tar archive</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-22"></a><span class="go">    login     Register or Login to the docker registry server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-23"></a><span class="go">    logs      Fetch the logs of a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-24"></a><span class="go">    port      Lookup the public-facing port which is NAT-ed to PRIVATE_PORT</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-25"></a><span class="go">    pause     Pause all processes within a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-26"></a><span class="go">    ps        List containers</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-27"></a><span class="go">    pull      Pull an image or a repository from the docker registry server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-28"></a><span class="go">    push      Push an image or a repository to the docker registry server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-29"></a><span class="go">    restart   Restart a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-30"></a><span class="go">    rm        Remove one or more containers</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-31"></a><span class="go">    rmi       Remove one or more images</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-32"></a><span class="go">    run       Run a command in a new container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-33"></a><span class="go">    save      Save an image to a tar archive</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-34"></a><span class="go">    search    Search for an image in the docker index</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-35"></a><span class="go">    start     Start a stopped container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-36"></a><span class="go">    stop      Stop a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-37"></a><span class="go">    tag       Tag an image into a repository</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-38"></a><span class="go">    top       Lookup the running processes of a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-39"></a><span class="go">    unpause   Unpause a paused container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-40"></a><span class="go">    version   Show the docker version information</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-41"></a><span class="go">    wait      Block until a container stops, then print its exit code</span>
 </pre></div>
 
-<p>It is also possible to <a href="https://hub.docker.com/">share your Docker images</a>
-with the <a href="https://docs.docker.com/reference/commandline/cli/#push">push</a>
-and <a href="https://docs.docker.com/reference/commandline/cli/#export">export</a> commands.</p>
-    <hr />
-    <ul>
-    <li><a href="../">Computational Environment Setup</a></li>
-    <li><a href="../../">Tutorial Home</a></li>
-    </ul>
+<div class="highlight"><pre><a name="environment--docker--help.sh-idio-shint-pyg.html-1"></a><span class="gp">$</span> docker start
+<a name="environment--docker--help.sh-idio-shint-pyg.html-2"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-3"></a><span class="go">Usage: docker start CONTAINER [CONTAINER...]</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-4"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-5"></a><span class="go">Restart a stopped container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-6"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-7"></a><span class="go">  -a, --attach=false         Attach container&#39;s stdout/stderr and forward all signals to the process</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-8"></a><span class="go">  -i, --interactive=false    Attach container&#39;s stdin</span>
+</pre></div>
   </body>
 </html>
