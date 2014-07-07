@@ -14,20 +14,23 @@ write basic [unit tests](https://en.wikipedia.org/wiki/Unit_testing#Benefits).
 
 More details:
 
-* https://docs.python.org/2/library/test.html
+* [https://docs.python.org/2/library/test.html](https://docs.python.org/2/library/test.html)
 
 
 ### Integration testing
 
 [Integration testing](https://en.wikipedia.org/wiki/Integration_testing) consists in writting tests
-that will check all your module works together.
+that will check all your modules can work together.
 
 
 ### Continuous integration dashboards
 
-To confirm that the update done to your code are not broking other platform or verion of python,
-the test suite can automatically be run on build bot each time a update is pushed to your
-repository. Then, the corresponding could be published to a dashboard.
+To confirm that your commits are not causing failure on other platform or when executed using
+different version of python, the test suite can automatically be run on a _build bot_ each time
+an update is pushed to your repository. Then, the associated results could be published on
+a dashboard.
+
+For example: [http://my.cdash.org/index.php?project=girder](http://my.cdash.org/index.php?project=girder)
 
 ## Hands On
 
