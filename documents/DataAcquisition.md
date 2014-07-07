@@ -20,7 +20,7 @@ still keeping it well rounded. In this exercise we will place the water over a
 glass surface, therefore creating a half-spherical lense.
 
 
-## Hands On
+## Hands-On
 
 [![Acquisition Overview](http://img.youtube.com/vi/kvKDqg-jbX4/0.jpg)](http://www.youtube.com/watch?v=kvKDqg-jbX4)
 
