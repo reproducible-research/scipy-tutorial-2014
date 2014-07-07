@@ -77,7 +77,7 @@ container the name <em>ipython</em>.</p>
 </pre></div>
 
 <p>And run via:</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker run --rm -v <span class="nv">$PWD</span>/../../dexy:/home/repro reproducible/dexy
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker run --rm -v <span class="nv">$PWD</span>/../../notebooks/dexy:/home/repro reproducible/dexy
 </pre></div>
 
 <p>This mounts the <code>scipy-tutorial-2014/dexy</code> directory within the container and
@@ -100,7 +100,7 @@ system after the container exits because of the volume mounting.</p>
 
 <p>To launch a non-interactive container which will run the IPython notebook
 server and forward the port IPython is running on, do:</p>
-<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker run -d -P -v <span class="nv">$PWD</span>/../../notebooks:/home/reproducible --name ipython reproducible/ipython
+<div class="highlight"><pre><a name="environment--docker--build-and-run.sh-idio.html-1"></a>docker run -d -P -v <span class="nv">$PWD</span>/../../notebooks:/home/repro --name ipython reproducible/ipython
 </pre></div>
 
 <p>To get information on the containers running and the ports available from a
