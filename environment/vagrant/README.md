@@ -9,10 +9,7 @@ Installation
 
 ### Linux / Ubuntu
 
-```
-sudo apt-get install vagrant
-sudo apt-get install ansible
-```
+{{ d['install-and-generate.sh|idio']['install-vagrant-ansible'] }}
 
 ### MacOS and Windows
 
@@ -24,20 +21,12 @@ Generation
 Once installed, open a new console and change directory to
 scipy-tutorial-2014/environment/vagrant.
 
-```
-cd scipy-tutorial-2014/environment/vagrant
-vagrant box add hashicorp/precise64 https://vagrantcloud.com/hashicorp/precise64/version/2/provider/virtualbox.box
-vagrant up
-```
+{{ d['install-and-generate.sh|idio']['generate-vagrant'] }}
 
 To connect to the machine:
 
-```
-vagrant ssh
-```
+    vagrant ssh
 
 To shutdown the virtual machine:
 
-```
-vagrant halt
-```
+{{ d['install-and-generate.sh|idio']['vagrant-shutdown'] }}

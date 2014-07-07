@@ -10,6 +10,7 @@ render-documents:
     - environment/docker/enter-environment.sh|idio
     - environment/docker/Dockerfile:
       - output: True
+    - environment/vagrant/install-and-generate.sh|idio
     - environment/check_env.py:
       - output: True
   - documents/*.md|resub|markdown|jinja:
