@@ -126,7 +126,7 @@ Submitting an article to a Reproducible Journal (20 min) - Luis
     * Open Access
     * Publishes article, data, and code
 * *Hands on:*
-    * Submit Article to the Insight Journal
+    * Submit Article to the [Insight Journal](http://insight-journal.org/browse/journal/74)
     * Point to GitHub fork for source code
 
 ### Replicate or Perish !
