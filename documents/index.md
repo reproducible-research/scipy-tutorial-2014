@@ -75,7 +75,7 @@
 
 ### Revision Control
 
-Revision Control with Git and GitHub (20 min) - Steve
+[Revision Control with Git and GitHub](VersionControl.md) (20 min) - Steve
 
 * Software versioning, collaboration, and citation
     * Keeping track of changes
