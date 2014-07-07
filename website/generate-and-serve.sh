@@ -4,10 +4,28 @@
 #
 # Run from the top of the repository
 
+#------------------------------------------------------------------------------
 my_dir="$(dirname "$0")"
+proj="scipy-tutorial-2014"
 
+#------------------------------------------------------------------------------
+echo
+echo "Removing ./output-site ..."
+[ -d ./output-site ] && rm -r ./output-site
+echo "Removing ./output-site ... [ok]"
+
+#------------------------------------------------------------------------------
 "$my_dir/generate.sh"
 
+#------------------------------------------------------------------------------
+echo
+echo "output-site -> output-site/$proj ..."
+mv ./output-site ./$proj
+mkdir ./output-site
+mv ./$proj ./output-site
+echo "output-site -> output-site/$proj ... [ok]"
+
+#------------------------------------------------------------------------------
 echo
 echo "Serving website..."
 if test running_in_docker; then
