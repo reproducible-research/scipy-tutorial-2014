@@ -9,28 +9,48 @@
   </a>
   <br />
     <h1 id="computational-environment">Computational Environment</h1>
-<p>TODO: Why reproducible computational enviroment is important.  What the
-characteristics of a reproducible computational environment are.</p>
+<p>Even though computers are often considered deterministic, computational
+software is a rapidly evolving and changing landscape. Libraries are constantly
+adding new features and fixing issues. Even libraries with the strictest
+backwards-compatibility policies can change in significant ways. As computer
+hardware evolves, software is forced to adapt accordingly.</p>
+<p>A reproducible computational environment is sufficiently consistent for the
+computational task at hand. For example, this can consist of a similar CPU
+instruction set, libraries and executables available with a specific version
+and configuration options, a specific operating system version, etc.</p>
 <h2 id="docker">Docker</h2>
+<p><img alt="Docker stack" src="http://tiewei.github.io/images/docker-filesystems-multilayer.png" width="350"></p>
 <p>Docker is an open-source engine that automates the deployment of any
-application as a lightweight, portable, self-sufficient container that will
-run virtually anywhere.</p>
-<p><img alt="Container vs VMs" src="http://tiewei.github.io/images/docker_vm.jpg" /></p>
-<p><img alt="Docker stack" src="http://tiewei.github.io/images/docker-filesystems-multilayer.png" /></p>
-<p>For more information on Docker please visit this page here (http://www.docker.com/whatisdocker)   </p>
-<h2 id="vms">VM's</h2>
-<p>As the name suggests, the VM (Virtual Machine) emulates a physical machine as such computers. In the last few years, VM has become very popular because of their scalability, ease of maintenance, and reproducibility. </p>
-<p>Vagrant is a software to define and control virtual machine environemnt. These machines are generally able to work   together or are somehow associated with each other. Here are some use-cases people are using multi-machine environments for today:  </p>
+application as a lightweight, portable, self-sufficient container that will run
+virtually anywhere.</p>
+<p><img alt="Container vs VMs" src="http://tiewei.github.io/images/docker_vm.jpg" width="350"></p>
+<p>Docker works with images that consume minimal disk space, versioned, archiveable, and shareable.
+Executing applications in these images does not require dedicated resources and is high performance.
+For more information on Docker <a href="http://www.docker.com/whatisdocker">please visit this page</a>.</p>
+<h2 id="virtual-machines">Virtual Machines</h2>
+<p>As the name suggests, a Virtual Machine (VM) emulates a physical computer. In
+the last few years, VM's have become very popular because of their scalability,
+ease of maintenance, and reproducibility. </p>
+<p>Vagrant is a software that defines and controls the virtual machine
+environment. These machines are generally able to work together and can be
+associated with each other. Some use-cases people are using multi-machine
+environments for today:  </p>
 <ul>
 <li>Accurately modeling a multi-server production topology, such as separating a web and database server.  </li>
 <li>Modeling a distributed system and how they interact with each other.  </li>
-<li>Testing an interface, such as an API to a service component.<br />
-Disaster-case testing: machines dying, network partitions, slow networks, inconsistent world views, etc.  </li>
+<li>Testing an interface, such as an API to a service component.  </li>
+<li>Disaster-case testing: machines dying, network partitions, slow networks, inconsistent world views, etc.  </li>
 </ul>
-<p>Many software packages provides virtualization on modern computer architecture such as VMWare, Virtual Box, Parallels etc. You will find many online blogs on comparison betweek Docker and VM (For eg. http://www.pcworld.com/article/2095460/docker-challenges-virtualization-market-with-containers.html)   . </p>
+<p>Many software packages provide virtualization on modern computer architectures
+such as VMWare, Virtual Box, Parallels etc.</p>
 <h2 id="package-managers-and-distributions">Package managers and distributions</h2>
-<p>TODO: package manager and distribution description</p>
-<h2 id="exercise">Exercise</h2>
+<p>Part of the problem in creating a computational environment is the procurement of
+necessary libraries and other dependencies. Linux distributions have long been a source of
+extensive scientific development resources. Package managers like <a href="http://brew.sh/">HomeBrew</a>
+and <a href="https://chocolatey.org/">Chocolatey</a> are also available for OSX and Windows. Scientific
+Python distributions are also available like <a href="http://continuum.io/downloads">Anaconda</a>,
+<a href="https://www.enthought.com/products/canopy/">Canopy</a> or <a href="https://code.google.com/p/pythonxy/">PythonX,Y</a>.</p>
+<h2 id="hands-on">Hands-On</h2>
 <ol>
 <li><a href="../environment/">Create your own reproducible computational environment</a>.</li>
 <li>Upload your Docker image to <a href="https://hub.docker.com">DockerHub</a>.</li>
