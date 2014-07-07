@@ -95,7 +95,7 @@ Revision Control with Git and GitHub (20 min) - Steve
 
 ### Regression Testing
 
-Regression Testing (30 min) - Jc
+[Regression Testing](RegressionTesting.md) (30 min) - Jc
 
 * Quality code development with regression tests
     * Testing code hypothesis: the scientific method applied to development
