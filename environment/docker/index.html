@@ -124,11 +124,56 @@ Windows, use <code>boot2docker</code> to find the correct IP address,</p>
 <p>For a full list of docker commands or docker subcommand help, enter <em>docker</em>
 or <em>docker subcommand</em> with no arguments.</p>
 <div class="highlight"><pre><a name="environment--docker--help.sh-idio-shint-pyg.html-1"></a><span class="gp">$</span> docker <span class="nb">help</span>
-<a name="environment--docker--help.sh-idio-shint-pyg.html-2"></a><span class="go">bash: docker: command not found</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-2"></a><span class="go">Usage: docker [OPTIONS] COMMAND [arg...]</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-3"></a><span class="go"> -H=[unix:///var/run/docker.sock]: tcp://host:port to bind/connect to or unix://path/to/socket to use</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-4"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-5"></a><span class="go">A self-sufficient runtime for linux containers.</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-6"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-7"></a><span class="go">Commands:</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-8"></a><span class="go">    attach    Attach to a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-9"></a><span class="go">    build     Build an image from a Dockerfile</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-10"></a><span class="go">    commit    Create a new image from a container&#39;s changes</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-11"></a><span class="go">    cp        Copy files/folders from the containers filesystem to the host path</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-12"></a><span class="go">    diff      Inspect changes on a container&#39;s filesystem</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-13"></a><span class="go">    events    Get real time events from the server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-14"></a><span class="go">    export    Stream the contents of a container as a tar archive</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-15"></a><span class="go">    history   Show the history of an image</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-16"></a><span class="go">    images    List images</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-17"></a><span class="go">    import    Create a new filesystem image from the contents of a tarball</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-18"></a><span class="go">    info      Display system-wide information</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-19"></a><span class="go">    inspect   Return low-level information on a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-20"></a><span class="go">    kill      Kill a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-21"></a><span class="go">    load      Load an image from a tar archive</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-22"></a><span class="go">    login     Register or Login to the docker registry server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-23"></a><span class="go">    logs      Fetch the logs of a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-24"></a><span class="go">    port      Lookup the public-facing port which is NAT-ed to PRIVATE_PORT</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-25"></a><span class="go">    pause     Pause all processes within a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-26"></a><span class="go">    ps        List containers</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-27"></a><span class="go">    pull      Pull an image or a repository from the docker registry server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-28"></a><span class="go">    push      Push an image or a repository to the docker registry server</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-29"></a><span class="go">    restart   Restart a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-30"></a><span class="go">    rm        Remove one or more containers</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-31"></a><span class="go">    rmi       Remove one or more images</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-32"></a><span class="go">    run       Run a command in a new container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-33"></a><span class="go">    save      Save an image to a tar archive</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-34"></a><span class="go">    search    Search for an image in the docker index</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-35"></a><span class="go">    start     Start a stopped container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-36"></a><span class="go">    stop      Stop a running container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-37"></a><span class="go">    tag       Tag an image into a repository</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-38"></a><span class="go">    top       Lookup the running processes of a container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-39"></a><span class="go">    unpause   Unpause a paused container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-40"></a><span class="go">    version   Show the docker version information</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-41"></a><span class="go">    wait      Block until a container stops, then print its exit code</span>
 </pre></div>
 
 <div class="highlight"><pre><a name="environment--docker--help.sh-idio-shint-pyg.html-1"></a><span class="gp">$</span> docker start
-<a name="environment--docker--help.sh-idio-shint-pyg.html-2"></a><span class="go">bash: docker: command not found</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-2"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-3"></a><span class="go">Usage: docker start CONTAINER [CONTAINER...]</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-4"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-5"></a><span class="go">Restart a stopped container</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-6"></a>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-7"></a><span class="go">  -a, --attach=false         Attach container&#39;s stdout/stderr and forward all signals to the process</span>
+<a name="environment--docker--help.sh-idio-shint-pyg.html-8"></a><span class="go">  -i, --interactive=false    Attach container&#39;s stdin</span>
 </pre></div>
   </body>
 </html>

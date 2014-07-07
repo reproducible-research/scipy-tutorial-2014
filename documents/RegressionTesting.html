@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/scipy-tutorial-2014/assets/style.css">
+    <link rel="stylesheet" type="text/css" href="/scipy-tutorial-2014/assets/pygments.css">
+  </head>
+  <body>
+  <a href="/">
+      <img src="http://www.sciencephoto.com/images/download_wm_image.html/H412408-Anton_van_Leeuwenhoek,_caricature-SPL.jpg" width="100px" />
+  </a>
+  <br />
+    <h1 id="regression-testing">Regression Testing</h1>
+<h2 id="overview">Overview</h2>
+<p>In the <a href="DataProcessing.html">DataProcessing</a> section, we experimented and created some
+awesome code to download, display, process and extract features from the <em>Saltritus</em> 
+image.</p>
+<h3 id="unit-tests">Unit tests</h3>
+<p>To ensure that improvement made to our code or even updates in the computing environment
+are not changing the expected results of each one of your modules, we will see how to
+write basic <a href="https://en.wikipedia.org/wiki/Unit_testing#Benefits">unit tests</a>.</p>
+<p>More details:</p>
+<ul>
+<li>https://docs.python.org/2/library/test.html</li>
+</ul>
+<h3 id="integration-testing">Integration testing</h3>
+<p><a href="https://en.wikipedia.org/wiki/Integration_testing">Integration testing</a> consists in writting tests
+that will check all your module works together.</p>
+<h3 id="continuous-integration-dashboards">Continuous integration dashboards</h3>
+<p>To confirm that the update done to your code are not broking other platform or verion of python,
+the test suite can automatically be run on build bot each time a update is pushed to your
+repository. Then, the corresponding could be published to a dashboard.</p>
+<h2 id="hands-on">Hands On</h2>
+<p>Run through the <em>04-RegressionTesting.ipynb</em> notebook in the repository. You will be able to
+adapt the example to work with your images. Save the updated notebook to disk.</p>
+  </body>
+</html>
