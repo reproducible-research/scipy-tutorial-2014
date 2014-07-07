@@ -8,6 +8,13 @@ running_in_docker() {
   awk -F/ '$2 == "docker"' /proc/self/cgroup | read
 }
 
+clear_website() {
+  echo
+  echo "Removing ./output-site ..."
+  [ -d ./output-site ] && rm -r ./output-site
+  echo "Removing ./output-site ... [ok]"
+}
+
 generate_website() {
   echo
   echo "Generating website..."
@@ -22,4 +29,5 @@ generate_website() {
   echo "Generating website... [ok]"
 }
 
+clear_website
 generate_website
