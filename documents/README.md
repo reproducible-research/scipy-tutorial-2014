@@ -61,7 +61,7 @@ Computational Environment (20min) - Aashish
 
 ### Revision Control
 
-Revision Control with Git (20min) - Steve
+[Revision Control with Git](VersionControl.md) (20min) - Steve
 
 * Keeping track of changes
 * Unique hashes
@@ -123,4 +123,3 @@ Attempt to replicate articles (40 min)
 * Group assignment
 * Replication attempt
 * Sharing observations
-
