@@ -49,7 +49,9 @@ such as VMWare, Virtual Box, Parallels etc.
 Part of the problem in creating a computational environment is the procurement of
 necessary libraries and other dependencies. Linux distributions have long been a source of
 extensive scientific development resources. Package managers like [HomeBrew](http://brew.sh/)
-and [Chocolatey](https://chocolatey.org/) are also available for OSX and Windows. Scientific
+and [Chocolatey](https://chocolatey.org/) are also available for OSX and Windows. On Linux, yum
+(http://yum.baseurl.org) is the command line package management for rpm systems, and 
+dpkg (https://wiki.debian.org/Teams/Dpkg) is the  software for Debian package management system. Scientific
 Python distributions are also available like [Anaconda](http://continuum.io/downloads),
 [Canopy](https://www.enthought.com/products/canopy/) or [PythonX,Y](https://code.google.com/p/pythonxy/).
 
