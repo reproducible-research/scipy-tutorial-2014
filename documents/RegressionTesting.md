@@ -27,8 +27,14 @@ that will check all your modules can work together.
 
 To confirm that your commits are not causing failure on other platform or when executed using
 different version of python, the test suite can automatically be run on a _build bot_ each time
-an update is pushed to your repository. Then, the associated results could be published on
-a dashboard.
+an update is pushed to your repository.
+
+The [Travis CI](https://travis-ci.org/) platform provides a very convenient solution to trigger a build/test cycle each
+time a change is pushed on your GitHub repository.
+
+For example: [https://travis-ci.org/girder/girder](https://travis-ci.org/girder/girder)
+
+Then, the associated results could be published on a dashboard.
 
 For example: [http://my.cdash.org/index.php?project=girder](http://my.cdash.org/index.php?project=girder)
 
