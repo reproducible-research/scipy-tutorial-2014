@@ -3,7 +3,7 @@
 #  Reproducible Research: Walking the Walk
 #
 # Make sure to use a persistent Docker image tag
-FROM       phusion/baseimage:0.9.10
+FROM       phusion/baseimage:0.9.11
 MAINTAINER Ana Nelson <ana@ananelson.com>
 
 # Set the locale to UTF-8
