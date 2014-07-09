@@ -44,5 +44,5 @@ For example:
 
 ## Hands On
 
-Run through the *04-RegressionTesting.ipynb* notebook in the repository. You will be able to
+Run through the [04-RegressionTesting.ipynb](http://nbviewer.ipython.org/github/reproducible-research/scipy-tutorial-2014/blob/master/notebooks/03-DataProcessing.ipynb) notebook in the repository. You will be able to
 adapt the example to work with your images. Save the updated notebook to disk.
