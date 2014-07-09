@@ -2,6 +2,7 @@
 
 Tutorial on reproducible research at [SciPy 2014](https://conference.scipy.org/scipy2014/).
 
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.10804.png)](http://dx.doi.org/10.5281/zenodo.10804)
 
 ## Description
 
