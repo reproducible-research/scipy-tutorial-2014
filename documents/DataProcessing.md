@@ -42,6 +42,6 @@ IPython magic,
 
 ## Hands On
 
-Run through the *03-DataProcessing.ipynb* notebook in the repository. At the end of the notebook,
+Run through the [03-DataProcessing.ipynb](http://nbviewer.ipython.org/github/reproducible-research/scipy-tutorial-2014/blob/master/notebooks/03-DataProcessing.ipynb) notebook in the repository. At the end of the notebook,
 there is a simple exercise on code re-use. Explore analysis on your images or images of
 nearby groups. Save the updated notebook to disk.
