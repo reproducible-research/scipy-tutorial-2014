@@ -51,4 +51,4 @@ We are going to perform this in three steps:
 2. Upload images to a data sharing web site
 3. Download images via [REST](http://en.wikipedia.org/wiki/Representational_state_transfer) API
 
-Run through the *02-DataSharing.ipynb* notebook in the repository.
+Run through the [02-DataSharing.ipynb](http://nbviewer.ipython.org/github/reproducible-research/scipy-tutorial-2014/blob/master/notebooks/02-DataSharing.ipynb) notebook in the repository.
