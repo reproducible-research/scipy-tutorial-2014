@@ -9,50 +9,59 @@
   </a>
   <br />
     <h3 id="clone-a-repo">Clone a repo</h3>
-<p><code>bash
-$ git clone https://github.com/your-username/scipy-tutorial-2014.git</code></p>
+<pre><code>$ git clone https://github.com/your-username/scipy-tutorial-2014.git
+</code></pre>
+
 <h3 id="branches">Branches</h3>
 <p>To create a branch</p>
-<p><code>bash
-$ git checkout -b my-working-branch</code></p>
+<pre><code>$ git checkout -b my-working-branch
+</code></pre>
+
 <p>Remember that this creates a branch <em>from</em> whatever branch is currently checked out. It's typically best to branch from master only, unless there's a reason to branch from an existing branch.</p>
 <h3 id="creating-a-commit">Creating a Commit</h3>
-<p><code>bash
-git add -u # stages all changed files, including deleted files
-git commit -m "Briefly describe your changes" # Try for 50 characters or less</code></p>
+<pre><code>git add -u # stages all changed files, including deleted files
+git commit -m "Briefly describe your changes" # Try for 50 characters or less
+</code></pre>
+
 <h3 id="see-your-changes">See your changes</h3>
-<p><code>bash
-$ git log master..
-$ git diff master...</code></p>
+<pre><code>$ git log master..
+$ git diff master...
+</code></pre>
+
 <h3 id="pushing-your-branch">Pushing your Branch</h3>
-<p><code>bash
-$ git push origin my-working-branch</code></p>
+<pre><code>$ git push origin my-working-branch
+</code></pre>
+
 <p>When you're ready, create a pull request on GitHub to merge your work.</p>
 <h3 id="seeing-changes-in-master">Seeing changes in master</h3>
 <p>If your pull request was not from a fork, the changes you made will be available on the master branch.</p>
-<p><code>bash
-$ git pull origin master
+<pre><code>$ git pull origin master
 $ git log master
-$ git log master --first-parent</code></p>
+$ git log master --first-parent
+</code></pre>
+
 <h3 id="working-with-forks">Working with Forks</h3>
 <p>If your pull request was from a fork, you'll need to pull changes from the upstream repository to get your changes in master.</p>
-<p><code>bash
-$ git remote -v # list remotes
+<pre><code>$ git remote -v # list remotes
 $ git remote add upstream https://github.com/reproducible-research/scipy-tutorial-2014
-$ git remote -v # should now see your new upstream remote</code></p>
+$ git remote -v # should now see your new upstream remote
+</code></pre>
+
 <p>To update your fork from the upstream</p>
-<p><code>bash
-$ git fetch upstream
-$ git rebase upstream/master</code></p>
+<pre><code>$ git fetch upstream
+$ git rebase upstream/master
+</code></pre>
+
 <p>Then, to get those changes back up into your fork on GitHub</p>
-<p><code>bash
-$ git push origin master</code></p>
+<pre><code>$ git push origin master
+</code></pre>
+
 <h3 id="resources">Resources</h3>
 <ul>
-<li>https://guides.github.com/introduction/flow/</li>
-<li>https://github.com/jnunemaker/dotfiles/blob/master/bash/config</li>
-<li>https://github.com/jnunemaker/dotfiles/blob/master/bash/git-completion</li>
-<li>https://guides.github.com/activities/citable-code/</li>
+<li><a href="https://guides.github.com/introduction/flow/">https://guides.github.com/introduction/flow/</a></li>
+<li><a href="https://github.com/jnunemaker/dotfiles/blob/master/bash/config">https://github.com/jnunemaker/dotfiles/blob/master/bash/config</a></li>
+<li><a href="https://github.com/jnunemaker/dotfiles/blob/master/bash/git-completion">https://github.com/jnunemaker/dotfiles/blob/master/bash/git-completion</a></li>
+<li><a href="https://guides.github.com/activities/citable-code/">https://guides.github.com/activities/citable-code/</a></li>
 </ul>
   </body>
 </html>
