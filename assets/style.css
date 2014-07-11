@@ -110,6 +110,19 @@ p#heart{
   color:#B50000;
   }
 
+/* Video link
+--------------------------- */
+.youtube-video-link {
+  background: url("http://www.llnrd.org/assets/templates/site/foundation-icons/svgs/fi-social-youtube.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 32px;
+  height: 32px;
+}
+
 /* Home Page
 --------------------------- */
 

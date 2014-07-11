@@ -17,7 +17,7 @@
 
 ### Introduction
 
-[History and Motivation for Reproducible Research](http://reproducible-research.github.io/Reproducible-Research-Part-I/) (10 min) - Luis
+[History and Motivation for Reproducible Research](http://reproducible-research.github.io/Reproducible-Research-Part-I/) (10 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?v=EzX7MN_bzqg#t=147">History and Motivation for Reproducible Research video</a> - Luis
 
 * History of scientific societies and publications
     * [Leeuwenhoek](http://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek) was The Man!
@@ -35,7 +35,7 @@
 
 ### Data Sharing
 
-[Data Sharing](DataSharing.md) - (20 min) - Luis
+[Data Sharing](DataSharing.md) - (20 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=EzX7MN_bzqg#t=2321">History and Motivation for Reproducible Research video</a> - Luis
 
 * Image gathering, storage, and sharing (10 min)
     * Figshare (www.figshare.com)
@@ -50,7 +50,7 @@
 
 ### Reproducible Computational Environment
 
-[Computational Environment](ComputationalEnvironment.md) (20 min) - Aashish
+[Computational Environment](ComputationalEnvironment.md) (20 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=EzX7MN_bzqg#t=3920">History and Motivation for Reproducible Research video</a> - Aashish
 
 * Reproducible computational environment
     * Docker
@@ -64,7 +64,7 @@
 
 ### Developing Reproducible Scripts and Modules
 
-[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20 min) - Matt
+[IPython Notebook, Scripts, and SimpleITK](DataProcessing.md) (20 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=EzX7MN_bzqg#t=5288">History and Motivation for Reproducible Research video</a> - Matt
 
 * Reproducible code development
     * IPython Notebook to combine notes, code, and results
@@ -75,7 +75,7 @@
 
 ### Revision Control
 
-[Revision Control with Git and GitHub](VersionControl.md) (20 min) - Steve
+[Revision Control with Git and GitHub](VersionControl.md) (20 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=EzX7MN_bzqg#t=6445">History and Motivation for Reproducible Research video</a> - Steve
 
 * Software versioning, collaboration, and citation
     * Keeping track of changes
@@ -95,7 +95,7 @@
 
 ### Regression Testing
 
-[Regression Testing](RegressionTesting.md) (30 min) - Jc
+[Regression Testing](RegressionTesting.md) (30 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=HCyHn_by3N0#t=56">History and Motivation for Reproducible Research video</a> - Jc
 
 * Quality code development with regression tests
     * Testing code hypothesis: the scientific method applied to development
@@ -108,7 +108,7 @@
 
 ### Literate Programming
 
-Literate Programming with Dexy (30 min) - Ana
+Literate Programming with Dexy (30 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=HCyHn_by3N0#t=1634">History and Motivation for Reproducible Research video</a> - Ana
 
 * Article generation
 * RST to HTML, etc
@@ -120,7 +120,7 @@ Literate Programming with Dexy (30 min) - Ana
 
 ### Open Science Publication
 
-Submitting an article to a Reproducible Journal (20 min) - Luis
+Submitting an article to a Reproducible Journal (20 min) <a class="youtube-video-link" href="https://www.youtube.com/watch?feature=player_detailpage&v=HCyHn_by3N0#t=5322">History and Motivation for Reproducible Research video</a> - Luis
 
 * Open Science Publication
     * Open Access
