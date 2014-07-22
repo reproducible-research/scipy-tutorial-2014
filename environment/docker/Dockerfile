@@ -61,6 +61,7 @@ RUN apt-get install -y mplayer
 ### "create-user"
 RUN useradd -m -p $(perl -e'print crypt("foobarbaz", "aa")') repro
 RUN adduser repro sudo
+RUN chown -R repro.repro /home/repro
 
 ### "activate-user"
 ENV HOME /home/repro
