@@ -5,10 +5,10 @@ set -e
 docker build -t reproducible/base .
 
 ### "build-dexy"
-docker build -t reproducible/dexy - < ./Dockerfile-dexy
+docker build -t reproducible/dexy dexy
 
 ### "build-ipython"
-docker build -t reproducible/ipython - < ./Dockerfile-ipython
+docker build -t reproducible/ipython ipython
 
 ### "run-dexy"
 docker run --rm -v $PWD/../../notebooks/dexy:/home/repro reproducible/dexy
